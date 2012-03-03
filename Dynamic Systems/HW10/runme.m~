@@ -1,0 +1,17 @@
+function x = runme(N,x0,Val0,Const)
+
+Tfin = 6;
+options=optimset('Algorithm','interior-point');
+% options=optimset('MaxFunEvals', 800);
+A = zeros(2*N);
+b = ones(2*N,1);
+for ind = 1:N
+    %Make sure u stays on [-1,1].
+    A(2*ind-1,2*ind-1) = 1;
+    A(2*ind,  2*ind-1) = -1;
+end
+% x0 = [1;pi/2;1;pi/4;.5;7*pi/8];
+lb = [-1;-pi
+x = fmincon(@(Values)myfun1(Values,x0,Tfin,N,Const),Val0,A,b,[],[],[],[],[],...
+            optimset('Algorithm','interior-point'));
+[TotT,TotxSol] = myfun(x,x0,Tfin,N,Const);

@@ -1,0 +1,179 @@
+% Use only LaTeX2e, calling the article.cls class and 12-point type.
+
+\documentclass[12pt, notitlepage, letterpaper]{article}
+\usepackage{bm,url,graphicx, amsfonts, amssymb} %PJM added these here
+\usepackage{amsmath}    % need for subequations
+\usepackage{graphicx}   % need for figures
+\usepackage{subfigure}  % use for side-by-side figures
+
+
+% The following parameters seem to provide a reasonable page setup.
+
+% Include your paper's title here
+
+\title{MA731: Robust HW}
+
+\author{Thomas Richardson}
+{\large }
+
+% Include the date command, but leave its argument blank.
+
+% \date{\small}
+
+
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+% Double-space the manuscript.
+
+\baselineskip 24pt
+
+% Make the title.
+
+\maketitle
+
+\noindent
+
+\paragraph{}
+
+Our system is as follows:
+
+%Equations for system, preliminaries
+\begin{equation}
+\label{eq:sys01}
+\dot{x} = Ax + Bu + Dw
+\end{equation}
+\begin{equation}
+\label{eq:sys02}
+y = Cx + Ew
+\end{equation}
+\begin{equation}
+\label{eq:sys03}
+z = Hx + Gu
+\end{equation}
+
+with
+\begin{align}
+\label{eq:ABSQRBC}
+\text{A} 
+&=
+\begin{bmatrix}
+1 & 2 \\
+2 & -3
+\end{bmatrix}
+,&
+\text{B}
+&=
+\begin{bmatrix}
+1 \\
+0
+\end{bmatrix}
+,&
+\text{C}
+&=
+\begin{bmatrix}
+3 &  1 
+\end{bmatrix}
+,&
+\text{E}
+&=
+\begin{bmatrix}
+0 &  1 
+\end{bmatrix}
+\end{align}
+
+
+\begin{align}
+\text{D} 
+&=
+\begin{bmatrix}
+0 & 0 \\
+1 & 0
+\end{bmatrix}
+,&
+\text{H}
+&=
+\begin{bmatrix}
+0 &  1 
+\end{bmatrix}
+,&
+\text{G}
+&=
+\begin{bmatrix}
+4
+\end{bmatrix}.
+\end{align}
+
+We also define an uncertainty term $\omega = (w,x(0))$ to be measured by
+
+\begin{equation}
+\label{eq:omgNorm}
+\|\omega\|^2 = \|x(0)\|^2_X + \int_{0}^{3}w(t)^Tw(t) dt
+\end{equation}
+
+Also let
+
+\begin{equation}
+\label{eq:etaNorm}
+\|\eta\|^2 = \|x(3)\|^2_Y + \int_{0}^{3}z(t)^Tz(t) dt
+\end{equation}
+
+In the above equations, $\|x(0)\|^2_X = x(0)^TXx(0)$ and $\|x(3)\|^2_Y = x(3)^TYx(3)$, where $X$ and $Y$ are both the identity matrix of the appropriate size.  
+
+Our stated goal is to obtain values $\gamma$ that are both greater than and less than $\hat{\kappa}$, where $\hat{\kappa}$ is the infinum of values $\kappa_{\mu}$ satisfying $\|\eta\| \leq \kappa_{\mu}\|\omega\|$.  From the source provided, we see that if values of $\kappa_{\mu}$ satisfy the above inequality, then the Riccati equations, $\it{Eq.}$ \ref{eq:RicSig} and $\it{Eq.}$ \ref{eq:RicP}, have solutions $\Sigma(t)$ and $P(t)$, respectively, on the given time interval for the given $\kappa_{\mu}$ value such that $\forall{t} \in[0,T]$,  $\rho(\Sigma(t)P(t)) < \kappa_{\mu}^2$, where $\rho(Mat)$ is the maximum magnitude eigenvalue of $Mat$.
+
+
+\begin{equation}
+\label{eq:RicSig}
+\dot{\Sigma} + A \Sigma  + \Sigma A^T - ( \Sigma C^T + L^T)N^{-1} (C \Sigma + L) + \gamma^{-2} \Sigma  Q \Sigma  + M = 0
+\end{equation}
+
+\begin{equation}
+\Sigma (0) = Y^{-1}
+\end{equation}
+
+\begin{equation}
+\label{eq:RicP}
+\dot{P} + PA + A^TP - (PB + S)R^{-1}(B^TP+S^T) + \gamma^{-2}PMP + Q = 0
+\end{equation}
+
+\begin{equation}
+P(T) = X
+\end{equation}
+
+where
+
+\begin{align}
+\begin{bmatrix}
+H^tH & H^TG \\
+G^TH & G^TG
+\end{bmatrix}
+&=
+\begin{bmatrix}
+Q & S \\
+S^T & R
+\end{bmatrix}
+\end{align}
+
+and
+
+\begin{align}
+\begin{bmatrix}
+DD^T & DE^T \\
+ED^T & EE^T
+\end{bmatrix}
+&=
+\begin{bmatrix}
+M & L^T \\
+L & N
+\end{bmatrix}.
+\end{align}
+
+Since Assumption A ($R > 0$, $R^{-1}$ bounded, $N > 0$, $N^{-1}$ bounded) and Assumption B (the pairs $(A, D)$ and $(A^T,H^T)$ are stabilizable) hold, then Theorem 3 may be utilized.  Thus, the ARE forms of $\it{Eq.}$ \ref{eq:RicP} and $\it{Eq.}$  \ref{eq:RicSig} were solved and then the condition $\rho(\Sigma^*P^*) < \kappa_{\mu}^2$ was checked, where $\Sigma^*$ and $P^*$ were the ARE solutions to the respective Riccati equations.  The Theorem states that in addition to this, there exists some critical value of $\kappa_{\mu}$ such that numbers below $\kappa_{\mu}$ do not satisfy the conditions stated above, while numbers above $\kappa_{\mu}$ do.  This critical value corresponds to the sought after value, $\hat{\kappa}$.  Thus, using the statements in Theorem 3, the AREs were solved for various $\kappa$ values and the corresponding $P^*$ and $\Sigma^*$ matrices were used to check the required conditions.  In doing so, it was found that the critical value, $\hat{\kappa}$, was somewhere between 5.4 and 5.2.  Additionally, it was found that sufficiently small $\kappa$ values resulted in unsolvable Riccati equations due to singularities.  Thus, $\kappa$ values such as 4 and 2 resulted in solvable Riccati equations that did not meet the above requirements, while $\kappa$ values such as 7 and 20 resulted in solvable AREs with corresponding $\Sigma^*$ and $P^*$ matrices that did satisfy the required conditions.
+
+
+\end{document}

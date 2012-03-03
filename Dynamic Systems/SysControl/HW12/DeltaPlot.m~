@@ -1,0 +1,3 @@
+function DeltaPlot(t_int)
+
+Delta = inline('2*(t>4).*(1-abs(t-5)).*(t<6)

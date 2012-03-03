@@ -1,0 +1,16 @@
+function xprime = xCalcODE(t,xin,A,a,at,B,b,bt,K)
+
+a = interp1(at,a,t); %Interpolate the data set (at,a) at time t
+A(1,2) = a; %Calculate the corresponding value of A
+b = interp1(bt,b,t); %Interpolate the data set (bt,b) at time t
+B(2) = b; %Calculate the corresponding value of B
+
+%Set current values for X and x; make sure they are corect orientation and
+%that X is in matrix form.
+Q = xin(1:4); Q=Q(:); Q = [Q(1:2),Q(3:4)];
+x = xin(5:end); x = x(:);
+
+tempQ = A*Q;
+tempxp = A*x + B*B'*Q'*K;
+
+xprime = [[tempQ(:,1);tempQ(:,2)];tempxp(:)];
