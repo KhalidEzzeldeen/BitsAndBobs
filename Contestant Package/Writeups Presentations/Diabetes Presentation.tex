@@ -1,0 +1,166 @@
+\documentclass{beamer}
+
+\usepackage{beamerthemesplit}
+
+\title{A Neural Network model to analyze how intervention of BMI would affect incidence of diabetes }
+\author{Thomas Richardson\\
+ Yuan Zhang}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{Introduction}
+\subsection{Overview of SAS Project}
+\frame
+{
+  \frametitle{Overview of SAS Project}
+
+  \begin{itemize}
+  \item {Rising Health Care costs in US prompts need for change in Health Care Policy}
+  \item {Assess healthcare costs associated with diabetes.}
+  \item {Determine how to reduce diabetes incidence as a means of reducing healthcare costs.}
+  \item {Enact measures to reduce risk of diabetes in at-risk population}
+  \item{Proposed measure:  reduce BMI by 10\%  in target population. }
+  \item{Data Set:  43 parameters for 50,000+ individuals.}
+  \end{itemize}
+}
+\subsection{Diabetes Background}
+\frame
+{
+  \frametitle{Overview of Diabetes}
+
+  \begin{itemize}
+  \item {}
+  \item {}
+  \item {}
+  \end{itemize}
+ 
+}
+\section{Proposed Plan}
+\subsection{Overview of Plan}
+\frame
+{
+\frametitle{Plan Summary}
+
+  \begin{itemize}
+  \item {Select set of most relevant parameters to use in analysis.}
+  \item {Train and validate neural network with selected parameters.}
+  \item {Observe how introducing the proposed measure affects the predicted incidence of diabetes.}
+  \end{itemize}
+}
+
+\frame
+{
+ \frametitle{Parameter Reduction}
+
+  \begin{itemize}
+  \item {Remove parameters that are likely caused or highly influenced by having diabetes (use literature to do this).}
+  \item {Use correlation / covariance measures to weed out less influential parameters.}
+  	\begin{itemize}
+ 	 \item {We used Partial Least Squares for this task.}
+	\end{itemize}
+ % \item {PLS is an extension of multiple linear regression, and creates a linear model using eigenvectors for the matrix resulting from the product of the factors matrix (subset of parameters from above) and the response matrix (incidence of diabetes).}
+  \item{May also want to use other measures to determine relevance of parameters.}
+  \end{itemize}
+}
+
+%Model Inputs
+\subsection{Neural Network Output}
+\frame
+{
+\frametitle{Interpreting Output}
+  \begin{itemize}
+  \item {Can cluster output data in order to determine an "at-risk" population.}
+  \item {Can modify input BMI to predict reduction in diabetes incidence due to proposed measure.}
+  \item {Future work will include determining healthcare costs resulting from diabetes.}
+  \end{itemize}
+}
+
+% Surveillance Stategies
+
+\subsection{Surveillance Strategies}
+\frame
+{
+\frametitle{International Guidelines }
+  \begin{itemize}
+  \item {American Urological Association(AUA)suggests periodic follow-up cystoscopy for bladder cancer patients. However, no specific interval nor duration of follow-ip cystoscopy has been defined}
+  \item {European Association of Urology(EAU) has specific follow-up guidelines for low rik, high risk, intermediate risk patients respectively. }
+  \item {First International Consultation on Bladder Tumours(FICBT) has specific follow-up recommendations for low risk, high-grade Ta, and CIS patients respectively.}
+  \item {National Comprehensive Cancer Network(NCCN) has two specific guidelines for low risk patients and intermediate or high risk patients respectively}
+  \item {The recommended follow-up cystoscopy schedules proposed by AUA, EAU, FICBT, and NCCN vary, and debates still exist.}
+  \end{itemize}
+}
+
+%new subsection of Utilities and Disutilities
+%\subsection{Utilities and Disutilities of Test and Treatments}
+%\frame
+%{
+%}
+
+
+%\section{Other Inputs of The Model}
+%\frame{
+%\frametitle{Utilities and Disutilities}
+%\begin{itemize}
+%\item {Assign qualify-of-life weights to each defined state between 0(death) and 1(perfect health)}
+%\item {Estimate disutitity of Cystoscopy}
+%\item {Estimate disutilities of various treatments for bladder cancers}
+
+%\end{itemize}
+
+%}
+
+\section{Research Questions}
+\frame
+{
+  \frametitle{Specific Research Questions   }
+
+  \begin{itemize}
+
+  \item<1-> {What's the best surveillance strategy with respect to cystoscopy frequency for various risk groups?}
+  \item<2-> {Is age a significant factor for the optimal surveillance strategy?}
+  \end{itemize}
+ 
+}
+\section{Results}
+\frame
+{
+  \frametitle{Methods }
+
+  \begin{itemize}
+
+  \item {simulation}
+  \item {sampling of a Markov chain}
+  \end{itemize}
+ 
+}
+\frame
+{
+  \frametitle{Preliminary Results }
+
+  
+ 
+}
+
+% Future Work
+\section{Future Work}
+\frame
+{
+  \frametitle{Future Work }
+  \begin{itemize}
+
+\item<1-> {Combining other non-invasive test methods(biomarkers, cytology ) with cystoscopy, can we design a better surveillance strategy?} 
+
+
+\end{itemize}
+
+ 
+}
+
+\end{document}
+    

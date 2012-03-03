@@ -1,0 +1,25 @@
+
+
+N = [10,15,20,25,30,35];
+times = zeros(2,length(N));
+scores = zeros(2,length(N));
+
+input.SolO = 1; %Column solutions
+input.FitType = 1;
+input.ScoreType = [1, 1, 0];
+input.k = 1.5;
+input.x0 = [];
+
+
+for ii = 1:length(N)
+    A = rand(N(ii),ceil(rand*N(ii)));
+    b = rand(N(ii),1);
+    input.A = A;
+    input.b = b;
+    output01 = RunGA(input);
+    times(1,ii) = output01.time;
+    scores(1,ii) = output01.sum(BestFit);
+    output02 = RunNLLS(input);
+    times(2,ii) = output02.time;
+    scores(2,ii) = output02.sum(BestFit);
+end

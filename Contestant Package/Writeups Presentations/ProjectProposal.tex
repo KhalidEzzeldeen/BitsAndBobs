@@ -1,0 +1,163 @@
+
+\documentclass[letterpaper,12pt,onecolumn]{article}
+%\documentclass[12pt]{}
+\usepackage{times}
+%\input{psfig.sty}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{amsthm, amssymb}
+\usepackage[cmex10]{amsmath}
+\usepackage{amsmath}
+\usepackage{rotating}
+
+%\usepackage{natbib}
+%\usepackage{multirow}
+% \bibpunct[, ]{(}{)}{,}{a}{}{,}%
+% \def\bibfont{\small}%
+% \def\bibsep{\smallskipamount}%
+% \def\bibhang{24pt}%
+% \def\newblock{\ }%
+% \def\BIBand{and}%
+
+%% Setup of theorem styles. Outcomment only one.
+%% Preferred default is the first option.
+%\TheoremsNumberedThrough     % Preferred (Theorem 1, Lemma 1, Theorem 2)
+%\TheoremsNumberedByChapter  % (Theorem 1.1, Lema 1.1, Theorem 1.2)
+%\ECRepeatTheorems
+%% Setup of the equation numbering system. Outcomment only one.
+%% Preferred default is the first option.
+%\EquationsNumberedThrough    % Default: (1), (2), ...
+
+
+\setlength{\textheight}{9.0in} \setlength{\textwidth}{6.5in}
+\setlength{\columnsep}{0.3in} \setlength{\topmargin}{-0.4625in}
+\setlength{\oddsidemargin}{0.0in} \setlength{\evensidemargin}{0.0in}
+
+%\setlength{\textheight}{9.0in} \setlength{\textwidth}{6.5in}
+%\setlength{\columnsep}{0.3in}
+%\setlength{\topmargin}{-0.5in}
+%\setlength{\oddsidemargin}{-0.2in}
+%\setlength{\evensidemargin}{-0.2in} %\setlength{\voffset}{0.0in}
+
+
+%\def\QED{\mbox{\rule[0pt]{1.5ex}{1.5ex}}}
+
+
+%\documentclass[12pt]{article}
+
+%\usepackage{graphicx}
+%\usepackage{amsmath}
+
+
+\vspace{96pt}
+\title{ISE790 Final Project Write-up}
+\vspace{96pt}
+\author{Yuan Zhang, Thomas Richardson \\
+        Operations Research\\
+        North Carolina State University
+}
+\vspace{24pt}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\newpage
+
+%List of things to have:
+%1. Introduction 
+	%¥ Problem or sub ject to be studied 
+	%¥ Background (Literature Review) 
+%2. Proposed approach 
+	%Mathematical model 
+	%¥ Computational algorithm 
+%3. Implementation 
+%4. List of codes 
+%5. Computational experiments 
+	%¥ Test problems 
+	%¥ Running results 
+%6. Performance analysis 
+%7. Conclusion and discussion
+
+\section*{Introduction}
+There are about 23.6 million children and adults in the United States 7.8\% of the population living with  diabetes, and 1.6 million new cases of diabetes are diagnosed in people aged 20 years and older each year \cite{Diabetes2007}.  Complications of diabetes including heart disease, stroke, blindness, kidney disease and etc.  Overall, the risk for death among people with diabetes is about twice that of people without diabetes of similar age. \cite{Diabetes2007}.
+
+The U.S. is spending \$174 billion for patients with diabetes, combining \$116 billion for direct medical costs and \$58 billion for indirect costs such as disability, work loss, and premature mortality \cite{Diabetes2007}.  Today diabetes prevention and early treatment are under-emphasized, if adults received their recommended diabetes screenings and early lifestyle intervention of  medicine treatment, complications and disability could be avoided and billions of dollars can be saved \cite{Chang2007}. 
+
+The United States Health Expense Think Tank (USHETH) is a fictional group that wants to know the impact of preventive measures on diabetes.  Furthermore, it would like to know how an increase or decrease in diabetes prevalence would affect the amount of money spent on health care. Specifically, USHETH wants to research on the following two questions:
+
+\begin{enumerate}
+	\item USHETH wants to know diabetes influences a patient total health care expense.  There are many estimates of the cost of diabetes care that have focused on diabetes-specific expenses, but it is known that diabetes might affect total health care expenses in many ways.  There are many factors in the patient database that need to be taken into account so we propose to build a model to know the difference in health care costs for a person with diabetes from the costs for a person without the disease.  It acknowledges that there are many factors that need to be taken into account.
+
+	\item USHETH needs to know how many people have diabetes by age and perhaps gender.  This will be critical for the analysis.
+We know that BMI is established as one of the  significant risk factors for diabetes \cite{Weinstein2004}, and studies show that lifestyle intervention can reduce the incidence of diabetes in persons at high risk \cite{Knowler2002}. USHETH wants to measure the impact of diabetes preventive measure. The measure focuses on people who have a BMI (body mass index) larger than 25 in adults.  In children the threshold BMI varies by age linearly: at 5 years old, the threshold BMI is 17 and at 20 years old, the threshold BMI is the same for adults.  These people will be enrolled in special programs to reduce their BMI by ten percent. USHETH then wants to know how many people would contract diabetes.
+
+\end{enumerate}
+
+
+
+%position your project within the literature.
+
+%For each reference state: who, what, how and the most significant findings.
+
+%Explain how your proposal differs from existing literature.
+
+
+
+\section*{Proposed Approach} \label{section: model}
+
+sort out important / most relevant parameters from list of 44, looking only at adults, as child diabetes (type i, I think) is not really of interest / not preventable in the same way type 2 is.
+
+use most important parameters to train NN to predict diabetes onset
+
+%Provide a rigorous mathematical description of your model carefully define all notation.\newline
+A large study was done in the United States to collect information on individuals, their health picture and how much money is spent on their behalf for health care. The sample provided is representative of the population and represents a snapshot of the country and its health care costs at a point in time.
+
+%For the first problem, we need to establish some function to describe health care costs for individuals as a function of diabetes, that is, we need to find a relationship between the various parameters provided and health care.  As incidence of diabetes is associated with some other factors in the data set, for example high blood pressure diagnosis, heart disease diagnosis, stroke diagonis, and etc. We propose to 
+%  It may also be useful to find relations for total costs, Medicare costs, and Medicaid costs independently.  We propose to use fuzzy clustering and fuzzy regression for this goal.
+
+%The second problem, finding diabetes distributions as a function of age and gender is pretty straightforward.  For this, we just need to find the relevant percentages falling into each category.  From this, information about a critical onset age may revel itself, or a gender bias for the disease.
+%
+%The second problem will likely be the most difficult, as it is rather open ended beyond the statement of the problem. 
+In determining how effective the proposed measure will be, we must analyze the onset of diabetes in the stated BMI categories, and determine relevant correlations.  Most open, as we also need to investigate how well other parameters predict onset of diabetes.  This is difficult since the data provides only a snapshot, and not a time series of data points.  Therefore, we have little knowledge of how these parameters changed for individuals over time, though we can extrapolate the onset of particular things (diabetes, heart conditions, BMI changes) by trends in the data. 
+
+First, we propose to create a clustering algorithm that could accurately place data points into the correct diabetes category based on the parameters provided, and one with a more continuous range of placement tags, such as ``very likely'',``likely'', ``not very likely'', etc.  The parameters from these models could likely be used to assess which parameters or sets of parameters are most correlated to an individual having diabetes. Then we propose to build a neural network as a underlying function between the various parameters (inputs) and the incidence of diabetes (output).   
+
+
+
+
+%state and justify your assumptions.\newline
+
+
+
+
+
+\section*{Implementation}
+
+%state and motivate the methodological plan.\newline
+%use citations to draw from the existing literature.\newline
+%provide a plan:
+%methodological steps to answer your research question.
+%state possible risks. what will you do if your ideas don't work?\newline
+%General clustering methods to see how things relate / best indicators
+
+we used mostly MATLab and JMP pre-coded stuff, so i'm not really sure what to put here.  i guess just the exact steps we went through, packages we used, why we use them, parameters we used for them, etc, etc.
+
+\section*{Results}
+this probably covers the computational experiments section we need to address.
+
+need to include nice colored image w/ age and bmi as axis headings, colored by predicted onset of diabetes from NN
+
+compare original data and implementation of desired preventative measure data
+
+
+\section*{Performance Analysis}
+
+
+\section*{Conclusion and Discussion}
+
+
+\bibliographystyle{plain}	% (uses file "plain.bst")
+\bibliography{library}		% expects file "myref.bib"
+
+\end{document}\end{Large} 

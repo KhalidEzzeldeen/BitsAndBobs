@@ -1,0 +1,17 @@
+
+N = [5,10,15,20];
+times = zeros(2,length(N));
+scores = zeros(2,length(N));
+
+for ii = 1:length(N)
+    A = CreateAdjMatrix(N(ii));
+    input.A = A;
+    output01 = MaxCutExact(input);
+    output02 = RunTabu(input);
+    times(:,ii) = [output01.RunTime; output02.RunTime];
+    scores(:,ii) = [output01.MaxCut; output02.MaxCut];
+end
+
+scoresdiff = scores(1,:)-scores(2,:);
+
+subplot(2,1,1(times(1,:),N,times(2,:),N,scores(1,:),N,scores(2,:),N)

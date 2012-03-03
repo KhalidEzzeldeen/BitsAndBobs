@@ -1,0 +1,118 @@
+{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 CourierNewPSMT;\f2\fnil\fcharset0 Monaco;
+\f3\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red28\green0\blue207;\red170\green13\blue145;}
+\margl1440\margr1440\vieww14540\viewh13120\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\fs32 \cf0 age (3)\
+maritial status (4)\
+highest degree (6)\
+total income (9)\
+more than one job (10)\
+high blood pressure (31)\
+adult bmi (42)\
+\
+-normalize some stuff (age, total income, bmi) 
+\b Not Needed
+\b0 \
+\
+\
+how to normalize the diabetes by age data based on total population?  \
+	bin both tot pop and diabetes pop via same method\
+	find tot num of people in each bin for tot pop\
+	divide num of people in each diab bin by num of people in each corresponding tot pop bin\
+\
+-remove those lacking BMI data\
+-look at adults / children sep ??\
+\
+\
+%-------------------------------------------------------\
+
+\b Clustering Shit
+\b0 \
+\
+-determine how clusters change for with / w/o diabetes data\
+-determine which nodes "flake off" when cluster number increases\
+-no penality for placing nodes in same cluster other than they are "closer" to another, so there is no way to "optimize" the number of clustered used for the data...\
+
+\i Modify K-means to include some penality function so that an Optimal cluster Number Can be found\
+
+\i0 \
+-how about we set up a function to penalize the algorithm for placing diab and non-diab in same clusters, w/o including diab data?  (this is modularity-esq in nature, though we don't have edges / average edges / etc to place in a modularity function)\
+- look @ paper that you found (Inter 
+\i vs.
+\i0  Intra distances for centers), code up clustering scheme\
+- use methods from .JMP KMeans\
+   
+\b\fs26 Standardize data by Std Dev\
+\pard\pardeftab720\li500\sa120\ql\qnatural
+
+\b0 \cf0 causes distances to be calculated so that for each dimension, the difference is divided by the sample standard deviation for that variable across all rows. This does the same thing as the 
+\b Standardize Data
+\b0  check box in the Cluster Launch dialog, except that in 
+\i k-
+\i0 means clustering the standardize feature can be turned on or off anytime to affect the succeeding iterations.\
+\pard\pardeftab720\li240\ql\qnatural
+
+\b \cf0 Color while clustering\
+\pard\pardeftab720\li500\sa120\ql\qnatural
+
+\b0 \cf0 assigns a different color to each cluster and colors the rows as they are assigned to clusters. This is a nice feature for large problems when you have plots open, because you can be entertained and enlightened as you watch the process at work.\
+\pard\pardeftab720\li240\ql\qnatural
+
+\b \cf0 Shift distances using sampling rates\
+\pard\pardeftab720\li500\sa120\ql\qnatural
+
+\b0 \cf0 assumes that you have a mix of unequally sized clusters, and points should give preference to being assigned to larger clusters because there is a greater prior probability that it is from a larger cluster. This option is an advanced feature. Whether or not you use this option, the prior distances (that are subtracted from the point-to-cluster distances) are shown in the column titled 
+\f1 Prior Dist
+\f0 . The calculations for this option are implied, but not shown for normal mixtures.\
+\pard\pardeftab720\li240\ql\qnatural
+
+\b \cf0 Use within-cluster std deviations\
+\pard\pardeftab720\li500\sa120\ql\qnatural
+
+\b0 \cf0 If you don\'92t use this option, all distances are scaled by an overall estimate of the standard deviation of each variable. If you use this option, then it will calculate distances scaled by the standard deviation estimated for each cluster. This option is not recommended for 
+\i k-
+\i0 means clustering, but is turned on by default for normal mixture estimation.
+\fs32 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 \
+\pard\tx480\pardeftab480\ql\qnatural\pardirnatural
+
+\f2\fs26 \cf0 \CocoaLigature0 %-------------------------------------------
+\f0\fs32 \CocoaLigature1 \
+\pard\pardeftab720\ql\qnatural
+
+\f3\fs28 \cf0 % April 15th\
+% +++ primary factor analysis\
+% +++ select input parameters X based on partially squrared analysis (PLS)\
+\
+% 1. cluster analysis on X.\
+% 2. partition the whole data set C into subsets C_i according to the clustering results\
+% 3. generate training data by pulling out 70% of each C_i, which are\
+% recorded as D_i. Training data set D=\{D_i\}, \
+% 4. External validation data set E=C-D.\
+% 5. train NN1 via D.\
+% 6.  internally validate NN1 via each D_i.\
+% 7.  externally validate NN1 via E.\
+% 8.  reducing BMI by 10% for C_i to generate new data set F_i\
+% 9.  record output of NN1 from  inout F_i by z_i\
+%10.  compare z_i with y_i, which is the output from C_i.
+\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\fs32 \cf0 \
+\
+\pard\tx480\pardeftab480\ql\qnatural\pardirnatural
+
+\f2\fs26 \cf0 \CocoaLigature0 %-------------------------------------------\
+% April \cf2 8\cf0 th\
+% \cf2 1.\cf0  cluster analysis on input X;\
+%    check \cf3 if\cf0  average value of Y is around \cf2 0.5\cf0  \cf3 for\cf0  each cluster\
+% \cf2 2.\cf0  read help documentation on \cf2 'newff'\cf0  see how to change some of the\
+% \cf3 default\cf0  parameters, \cf3 for\cf0  example \cf2 'validate checks'\cf0 \
+% \cf2 3.\cf0  read the bankruptcy neural network paper\
+% \cf2 4.\cf0  look genetic programming algorithm\
+% \cf2 5.\cf0  ask Dr.Fang about the neural network problems.\
+}

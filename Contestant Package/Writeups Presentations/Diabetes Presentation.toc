@@ -1,0 +1,12 @@
+\beamer@endinputifotherversion {3.07pt}
+\beamer@sectionintoc {2}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{Overview of SAS Project}{3}{0}{1}
+\beamer@subsectionintoc {2}{2}{Diabetes Background}{4}{0}{1}
+\beamer@sectionintoc {3}{Proposed Plan}{5}{0}{2}
+\beamer@subsectionintoc {3}{1}{Overview of Plan}{5}{0}{2}
+\beamer@subsectionintoc {3}{2}{Neural Network Model}{7}{0}{2}
+\beamer@subsectionintoc {3}{3}{Decisions}{8}{0}{2}
+\beamer@subsectionintoc {3}{4}{Surveillance Strategies}{8}{0}{2}
+\beamer@sectionintoc {4}{Research Questions}{10}{0}{3}
+\beamer@sectionintoc {5}{Results}{12}{0}{4}
+\beamer@sectionintoc {6}{Future Work}{14}{0}{5}
