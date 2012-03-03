@@ -1,1 +1,7 @@
-This folder is a collection of work for a class on optimal control theory and applications.  All code was written in MATLAB, and most (all?) final "reports" are in .pdf or .doc(x) formats.  Each HW folder typically contains some code files (*.m, the default MATLAB extension; *.m~ files are the default MATLAB auto-backup files), various image files corresponding to trajectories of the problems, and report files.  The Project folder contains some preliminary work on an adaptive temperature control system for residental use.  The pith of the project was to begin work on a machine-learning system that minimized energy consumption expended on household heating and cooling throughout the day while still acheiving comfortable climates when residents returned at the end of a work day.
+This folder is a collection of work for a class on optimal control theory and applications.  All code was written in
+MATLAB, and most (all?) final "reports" are in .pdf or .doc(x) formats.  Each HW folder typically contains some code
+files (*.m, the default MATLAB extension; *.m~ files are the default MATLAB auto-backup files), various image files
+corresponding to trajectories of the problems, and report files.  The Project folder contains some preliminary work on
+an adaptive temperature control system for residental use.  The pith of the project was to begin work on a
+machine-learning system that minimized energy consumption expended on household heating and cooling throughout the day
+while still acheiving comfortable climates when residents returned at the end of a work day.
