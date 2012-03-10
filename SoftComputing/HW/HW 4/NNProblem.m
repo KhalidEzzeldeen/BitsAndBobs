@@ -46,6 +46,7 @@ for t = 1:T(1)
     zTemp = Func(zTemp); % this is K by 1 vector of ANN outputs
     if size(zTemp,1) ~= K, zTemp=zTemp';end
     
+    % 3) Update error for test thus far
     E = E + .5*sum((zTemp - TestFunc(TestSet(t,1),TestSet(t,2)))^2);
     
 end
