@@ -1,0 +1,35 @@
+<!-- pt_lists.tmpl -->
+<html>
+<head>
+<title>[%var title :escapeHTML%]</title>
+</head>
+<body bgcolor="white">
+
+<p>Ordered list:</p>
+
+<ol>
+[%in list: item %]
+  <li>[%var item :escapeHTML%]</li>
+[%endin%]
+</ol>
+
+<p>Unordered list:</p>
+
+<ul>
+[%in list: item %]
+  <li>[%var item :escapeHTML%]</li>
+[%endin%]
+</ul>
+
+<p>Definition list:</p>
+
+<dl>
+[%in defn_list%]
+  <dt>[%var note :escapeHTML%]</dt>
+  <dd>[%var mnemonic :escapeHTML%]</dd>
+[%endin%]
+</dl>
+
+</body>
+</html>
+

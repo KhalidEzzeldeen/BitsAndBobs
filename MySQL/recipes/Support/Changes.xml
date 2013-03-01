@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<changelog>
+<book>MySQL Cookbook, Second Edition</book>
+<distribution>recipes</distribution>
+<url>http://www.kitebird.com/mysql-cookbook/</url>
+<downloads>http://www.kitebird.com/mysql-cookbook/downloads.php</downloads>
+
+<changeset>
+<version>2.00</version>
+<date>2006-11-27</date>
+
+<items>
+<item>
+Initial release of recipes distribution for MySQL Cookbook, Second Edition.
+</item>
+</items>
+</changeset>
+
+</changelog>

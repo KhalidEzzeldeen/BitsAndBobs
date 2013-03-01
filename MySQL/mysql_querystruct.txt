@@ -1,0 +1,39 @@
+-------------------------------
+CREATE VIEW virtual tables, yo!!!!!!!
+SELECT what
+FROM table
+INNER JOIN bitches
+WHERE conditions
+-------------------------------
+UPDATE table
+SET field1=new_value
+WHERE field2=condition
+-------------------------------
+--options----------------------
+-------------------------------
+ORDER BY
++ DESC / ASC; applies only to imm. preceeding col. name]
+
+AS 
++ calculated column output; also for aliasing table_1 as tbl1_ali
+-------------------------------
+--select-----------------------
+-------------------------------
+DISTINCT
+
+-------------------------------
+--from-------------------------
+-------------------------------
+table_1 INNER JOIN table_2 ON conditions AND for AND matching
+# t1 and t2 can be same table
+
+
+-------------------------------
+-where-------------------------
+-------------------------------
+# can use general comparisons from WHERE statements as SELECT columns to see
+# actual comparison values; i.e., srcuser < 'c'
+AND / OR
+IS NOT NULL
+IS NULL
+<=>

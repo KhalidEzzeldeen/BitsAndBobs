@@ -1,0 +1,36 @@
+import sys
+import os			#os.popen(), os.system()
+import types
+import string
+import re	
+import subprocess		#subprocess.Popen(), subprocess.call()
+
+sys.path.append('/Users/sinn/Documents/My Python Files')
+
+from module import syntax
+from __future__ import print_function
+
+import nltk
+import numpy as np
+import matplotlib.pyplot as plt
+
+#Chapter 3 onwards
+from __future__ import division
+import nltk, re, pprint
+
+#unicode stuff
+import codecs
+import unicodedata
+
+#web feed stuf
+import feedparser
+llog = feedparser.parse(URL)
+llog['feed']['title'
+llog.entries
+post=llog.entries[num]
+post.title
+post.content[num2].value
+
+from urllib import urlopen
+import urllister
+#also, what's urllib???

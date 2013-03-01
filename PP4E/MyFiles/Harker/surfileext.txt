@@ -1,0 +1,3 @@
+MF: mf
+TSN:sn,tsn,tsna
+USAMP:usamp|,usamp

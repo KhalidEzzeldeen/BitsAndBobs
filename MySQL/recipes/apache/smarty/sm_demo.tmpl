@@ -1,0 +1,44 @@
+<!-- sm_demo.tmpl -->
+<html>
+<head>
+<title>Smarty Demonstration</title>
+</head>
+<body>
+
+<p>Value substitution:</p>
+<p>
+  My name is {$character_name},
+  and I am {$character_role}.
+</p>
+
+<p>Value substitution with encoding:</p>
+<p>
+  HTML-encoding: {$str_to_encode|escape};
+  URL-encoding: {$str_to_encode|escape:"url"}
+</p>
+
+<p>Conditional testing:</p>
+<p>
+  {if $id}
+    You requested information for item number {$id}.
+  {else}
+    You didn't choose any item!
+  {/if}
+</p>
+
+<p>Iteration:</p>
+<p>
+  Colors of the rainbow (using foreach):
+  {foreach from=$colors item=color}
+    {$color}
+  {/foreach}
+</p>
+<p>
+  Colors of the rainbow (using section):
+  {section loop=$colors name=color}
+    {$colors[color]}
+  {/section}
+</p>
+</body>
+</html>
+

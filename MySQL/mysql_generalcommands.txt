@@ -1,0 +1,14 @@
+CREATE DATABASE db_name;
+USE db
+CREATE TABLE tbl_name (col01_name VARTYPE01, … colnn_name VARTYPEnn);
+SHOW TABLES;			# display tables in db
+SELECT DATABASE();		# show current db
+DESCRIBE / DESC table;		# show structure of TABLE table
+SHOW CREATE TABLE table\G
+SHOW INDEX FROM table
+source filename;		# both mimic batch mode
+\. filename
+SET NAMES 'utf8' COLLATE 'utf8_general_ci'	# sets the char set and collate arg on server
+
+GRANT ALL ON healthcaresas.* TO 'defuser'@'localhost' IDENTIFIED BY 'defpa55';
+# creates a new user, 'defuser' with pswd 'defpa55', grants access to sas

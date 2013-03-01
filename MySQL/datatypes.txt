@@ -1,0 +1,107 @@
+-------------------------------------------------------------------------------
+----Numeric Types--------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+SERIAL <-> BIGINT UNSIGNED NOT NULL AUTO_INCREMENT UNIQUE
+
+BOOL, BOOLEAN, TINYINT(1)
+
+TINYINT(M) --> -127 to 128 OR 0 to 255
+
+SMALLINT [UNSIGNED] [ZEROFILL] --> -32768 to 32767 OR 0 to 65535
+
+MEDIUMINT(M)
+
+INT(M), INTEGER(M) [UNSIGNED] [ZEROFILL] --> 0 to 16777215
+
+BIGINT(M) 
++ may be rounding issues if arit done w/ unsgn bit ints > max value; can store values in BIGINT column, MIN() and MAX() ops, +-* etc. when both operands ints
++ can always store arb large int exactally as string; str-2-num d/n have double intermediate
++ 'M' in the above cases is optional, defaults to 1 if omitted, reps number of bits per value
+
+DECIMAL(M[,D]), DEC(M[,D]), NUMERIC(M[,D]), FIXED(M[,D]) [UNSIGNED] [ZEROFILL]
++ 'M' is total num of digits (precision), 'D', is digits after decimal (0 < M < 65 [10], [0] < D < 30)
++ all basic athri ops done w/ precision 65
+
+FLOAT[(M,D)] [UNSIGNED] [ZEROFILL]
++ single percision floating-point nums (i.e., x.nnnn…nnE+/-NN)
++ accurate to approx 7 dec places
++ may have strange probs, since all calcs done w/ DOUBLE
+
+DOUBLE[(M,D)] DOUBLE PRECISION[(M,D)], REAL[(M,D)] [UNSIGNED] [ZEROFILL]
++ double-precision floating-point
++ if M, D omitted defaults to hardware limits
++ accurate to approx 15 dec places
+
+FLOAT(P)
++ if 0 < p < 24 --> FLOAT
++ if 25 < p < 53 --> DOUBLE
+
+-------------------------------------------------------------------------------
+----Date and Time Type---------------------------------------------------------
+-------------------------------------------------------------------------------
+
+DATE
++ 1000-01-01 to 9999-12-31
++ YYYY-MM-DD
++ YEAR(), MONTH(), DAY()
+
+DATETIME
++ 1000-01-01 00:00:00 to 9999-12-31 23:59:59
++ YYYY-MM-DD HH:MM:SS
+
+TIMESTAMP [DEFAULT] [ON UPDATE]
++ '1970-01-01 00:00:01' UTC to '2038-01-19 03:14:07'
++ convert to num by adding '+0'
++ set any TIMESTAMP col to current date time by assigning it a NULL value
+
+TIME
++ '-838:59:59' to '838:59:59'
+
+YEAR[(2|4)]
+
++ use conversion functions to perform SUM(), AVG() ops on dates, i.e. SEC_TO_DATE(OP((TIME_TO_SEC())), and FROM_DAYS(OP(TO_DAYS()))
++ all data types, except for TIMESTAMP, must have constant, non-function based DEFAULT values, if any
+
+-------------------------------------------------------------------------------
+----String Type----------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+CHAR(M) [CHARACTER SET type] [COLLATE type]
++ fixed-length str, padded to right to make len()=M
++ CHAR(0) can be NULL or ''
++ stripping of white-space occurs
+
+VARCHAR(M) [CHARACTER SET type] [COLLATE type]
++ var-length str, max len M
++ no white-space stripping
+
+TEXT[(M)] [CHARACTER SET type] [COLLATE type]
++ not allowed DEFAULT value
+
+ENUM(value_list) [CHARSET type] [COLLATE type]
++ only assigned one value from the list
++ max 65,535 distinct values
+
+SET(value_set) [CHARSET type] [COLLATE type]
++ can be assigned multi values from the set
++ max 64 members
+
+TINYBLOB / TINYTEXT [CHARSET type] [COLLATE type]
++ BLOB w/ max len 255 bytes / chars
++ not allowed DEFAULT value
+
+MEDIUMBLOB / MEDIUMTEXT
++ max len 16,777,215 bytes / chars
++ not allowed DEFAULT value
+
+LONGBLOB / LONGTEXT
++ 4GB
++ not allowed DEFAULT value
+
++ 'CHARSET' also
++ CHAR CHARSET binary --> BINARY (like 'r' vs. 'rb')
++ VARCHAR CHARSET binary --> VARBINARY (ditto)
++ TEXT CHARSET binary --> BLOB[(M)] (ditto);
++ ASCII --> CHARSET latin1
++ UNICODE --> CHARSET ucs2

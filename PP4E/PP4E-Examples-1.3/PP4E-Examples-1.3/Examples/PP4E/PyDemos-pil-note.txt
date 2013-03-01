@@ -1,0 +1,9 @@
+PyPhoto requires the PIL open source Python imaging library 
+to be installed separately, for image thumbnail generation, 
+and for viewing of some photo types.  See the book for details,
+and search on google to fetch and download PIL for Python 3.X.
+A prerelease 3.X version of PIL is in the book examples tree.
+
+Also note that images in this distribution and its saved mail
+files were reduced in size and resolution to save space.  Use
+images of your own to experiment further.

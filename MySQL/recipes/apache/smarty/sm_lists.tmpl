@@ -1,0 +1,34 @@
+<!-- sm_lists.tmpl -->
+<html>
+<head>
+<title>{$title|escape}</title>
+</head>
+<body bgcolor="white">
+
+<p>Ordered list:</p>
+
+<ol>
+{foreach from=$list item=cur_item}
+  <li>{$cur_item|escape}</li>
+{/foreach}
+</ol>
+
+<p>Unordered list:</p>
+
+<ul>
+{foreach from=$list item=cur_item}
+  <li>{$cur_item|escape}</li>
+{/foreach}
+</ul>
+
+<p>Definition list:</p>
+
+<dl>
+{section loop=$defn_list name=cur_item}
+  <dt>{$defn_list[cur_item].note|escape}</dt>
+  <dd>{$defn_list[cur_item].mnemonic|escape}</dd>
+{/section}
+</dl>
+
+</body>
+</html>

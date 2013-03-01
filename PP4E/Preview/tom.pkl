@@ -1,0 +1,14 @@
+(dp0
+S'pay'
+p1
+I0
+sS'job'
+p2
+NsS'age'
+p3
+I50
+sS'name'
+p4
+S'Tom'
+p5
+s.

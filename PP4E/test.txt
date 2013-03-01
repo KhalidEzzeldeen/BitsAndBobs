@@ -1,0 +1,7 @@
+
+test_dict = dict(name='Tom', age=50, job='software')
+
+print(5**3 + 4)
+
+print("hello eval world!")
+

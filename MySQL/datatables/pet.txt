@@ -1,0 +1,6 @@
+Fluffy	Harold	cat	f	1993-02-04	\N
+Claws	Gwen	cat	m	1994-03-17	\N
+Buffy	Gwen	dog	f	1989-05-13	\N
+Fang	Benny	dog	m	1990-08-27	\N
+Bowser	Diane	dog	\N	1997-12-09	\N
+Suntzu	Thomas	dog	f	1983-06-05	1997-06-04

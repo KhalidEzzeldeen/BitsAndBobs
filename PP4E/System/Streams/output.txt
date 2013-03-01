@@ -1,0 +1,4 @@
+Hello stream world
+enter a num> 8 cubed is 512
+enter a num> 6 cubed is 216
+enter a num> Bye

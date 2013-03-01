@@ -1,0 +1,16 @@
+Change log for MySQL Cookbook, Second Edition recipes distribution
+
+   This file lists changes to the recipes distribution that accompanies
+   MySQL Cookbook, Second Edition. Changes are listed in reverse
+   chronological order.
+
+   Downloads are available at:
+   [1]http://www.kitebird.com/mysql-cookbook/downloads.php.
+
+   Version 2.00 (2006-11-27)
+     * Initial release of recipes distribution for MySQL Cookbook, Second
+       Edition.
+
+References
+
+   1. http://www.kitebird.com/mysql-cookbook/downloads.php

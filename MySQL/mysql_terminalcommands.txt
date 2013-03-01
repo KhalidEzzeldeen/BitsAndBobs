@@ -1,0 +1,54 @@
+-t 			--> interactive output format in batch mode
+-vvv 			--> echos commands from batch
+-ss 			--> skips col names
+--skip-column-names 	--> guess…
+-e			--> execute command from term.
+-s or --silent		--> less output
+-v or --verbose		--> more output
+\T or --tee		--> start tee file
+\t			--> disable tee file
+
+# example of execution of QUERY from terminal, via '-e' argument
+# note how commands are seperated (';') and contained (" ")
+mysql -p -X -e "USE menagerie; SELECT name, birth FROM pet WHERE sex = 'm'" > /Users/sinn/Desktop/petQ.xml
+
+# piping, etc.; showdb.sql is a file containing SQL commands
+# this is output (via -X; -H for HTML out) to an XML document
+mysql -X < /Users/sinn/Documents/MySQL/showdb.sql > /Users/sinn/Desktop/srvdbs.xml
+mysql opts < input file | python action.py > output file
+
+# export existing data / structures
+mysqldump [options] database [tables]
+mysqldump -u root -p --all-databases --no-data > /Users/sinn/Desktop/output.sql
+
+# view databases in system, tables in database
+mysqlshow [options] [database [table [column]]]
+mysqlshow -u root -p mysql db
+
+# `optomized` mysqldump; requires Perl DBI::mysql module
+mysqlhotcopy [options] database1 [/path/to/target/directory]
+
+# import delimited data
+mysqlimport [options] database textfile1 [textfile2…]
+--fields-terminated-by=\t 
+--lines-terminated-by=\n
+
+# check for corruption 
+myisamchk [options] /path/to/table_name.MYI
+path==/usr/local/mysql/data/database/table.MYI
+--recover (-r) option
+--information (-i) option
+[--check], --medium-check, --extend-check
+
+# check for corruption while daemon running
+mysqlcheck [options] database [tables]
+--databases
+--all-databases
+-a (analyze)
+-r (repair)
+-o (optimize)
+
+# the command returns a line for every table in
+# the named database with the number of columns 
+# and the number of rows in each table
+mysqlshow --count database_name

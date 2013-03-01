@@ -1,0 +1,47 @@
+<!-- pt_tables.tmpl -->
+<html>
+<head>
+<title>[%var title :escapeHTML%]</title>
+</head>
+<body bgcolor="white">
+
+<p>HTML table:</p>
+
+<table border="1">
+<tr>
+  <th>Year</th>
+  <th>Artist</th>
+  <th>Title</th>
+</tr>
+[%in rows%]
+  <tr>
+    <td>[%var year :escapeHTML%]</td>
+    <td>[%var artist :escapeHTML%]</td>
+    <td>[%var title :escapeHTML%]</td>
+  </tr>
+[%endin%]
+</table>
+
+<p>HTML table with rows in alternating colors:</p>
+
+<table border="1">
+<tr>
+  <th bgcolor="silver">Year</th>
+  <th bgcolor="silver">Artist</th>
+  <th bgcolor="silver">Title</th>
+</tr>
+[%in rows%]
+  [%if __ODD__ %]
+  <tr bgcolor="white">
+  [%else%]
+  <tr bgcolor="silver">
+  [%endif%]
+    <td>[%var year :escapeHTML%]</td>
+    <td>[%var artist :escapeHTML%]</td>
+    <td>[%var title :escapeHTML%]</td>
+  </tr>
+[%endin%]
+</table>
+
+</body>
+</html>

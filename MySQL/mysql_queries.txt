@@ -1,0 +1,58 @@
+# page from mysql site that has common queries
+http://dev.mysql.com/doc/refman/5.1/en/examples.html
+
+# select 4th highest sal
+SELECT sal FROM `emp` ORDER BY sal DESC LIMIT 4,1
++ LIMIT n,k shows n-th in list (1st == index 0) to k-th in list (if k is absent, only 1 shown)
+
+# query with calculated column as part of result
+SELECT name, birth, CURDATE(),
+    -> (YEAR(CURDATE())-YEAR(birth))
+    -> - (RIGHT(CURDATE(),5)<RIGHT(birth,5))
+    -> AS age
+    -> FROM pet;
+
+# inner join query to determine ages of pets when the event 'litter' occurs
+# uses both 'pet' and 'event' tables from db 'menagerie'
+SELECT pet.name,
+    -> (YEAR(date) -YEAR(birth)) - (RIGHT(date,5)<RIGHT(birth,5)) AS age,
+    -> remark
+    -> FROM pet INNER JOIN event
+    -> ON pet.name = event.name
+    -> WHERE event.type = 'litter';
+
+# self inner join w/ aliasing; produces canidate mating pairs of animals
+# last line is optional, if you don't want dead animals mating
+# could do the sex matching diff., but this makes sure no double-count match
+SELECT p1.name, p1.sex, p1.species, p2.name, p2.sex, p2.species
+    -> FROM pet AS p1 INNER JOIN pet AS p2
+    ->   ON p1.species = p2.species AND p1.sex = 'f' AND p2.sex = 'm';
+    -> AND p1.death IS NULL and p2.death IS NULL;
+
+# for a DATETIME category, using DATE_FORMAT keyword disects the data;
+# using 'AS' changes the display name, as normal; CONCAT() does as exp.
+SELECT DATE_FORMAT(t, '%M %e, %Y') AS Date_sent, 
+CONCAT(srcuser,'@',srchost) AS sender, 
+size FROM mail;	
+
+# virtual tables!!!!!!!!!!!!!11
+CREATE VIEW mail_view AS SELECT DATE_FORMAT(t, '%M %e, %Y') AS date_sent, CONCAT(srcuser,'@',srchost) AS sender, CONCAT(dstuser,'@',dsthost) AS recip, size FROM mail;
+SELECT date_sent, sender, size FROM mail_view WHERE size > 100000 ORDER BY size;
+
+# CREATE TEMPORARY TABLE also an option for short-lived (session) tables
+# these are connection-sepcific tables, so no name clashes with oth ppl
+# connecting to same server
+# also, DROP TEMPORY TABLE IF EXISTS tbl_name to avoid dropping
+# "real" tables w/ same name as temp table
+
+# making copies of tables
+CREATE TABLE new_table LIKE existing_table;
+INSERT INTO new_table SELECT * FROM existing_table WHERE conds mets;
+# or, table form query...
+CREATE TABLE new_table SELECT query FROM existing_table;
+CREATE TABLE dst_table
+(
+	id INT NOT NULL AUTO_INCREMENT,
+	PRIMARY KEY (id)
+)
+SELECT a, b, c FROM src_tbl;

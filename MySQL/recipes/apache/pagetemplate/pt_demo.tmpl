@@ -1,0 +1,37 @@
+<!-- pt_demo.tmpl -->
+<html>
+<head>
+<title>PageTemplate Demonstration</title>
+</head>
+<body>
+
+<p>Value substitution:</p>
+<p>
+  My name is [%var character_name%],
+  and I am [%var character_role%].
+</p>
+
+<p>Value substitution with encoding:</p>
+<p>
+  HTML-encoding: [%var str_to_encode :escapeHTML%];
+  URL-encoding: [%var str_to_encode :escapeURI%]
+</p>
+
+<p>Conditional testing:</p>
+<p>
+  [%if id%]
+    You requested information for item number [%var id%].
+  [%else%]
+    You didn't choose any item!
+  [%endif%]
+</p>
+
+<p>Iteration:</p>
+<p>
+  Colors of the rainbow:
+  [%in colors: color%]
+    [%var color%]
+  [%endin%]
+</p>
+</body>
+</html>
