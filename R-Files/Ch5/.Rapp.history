@@ -1,0 +1,252 @@
+minTemp
+minTemp[minTemp==NA]<-0
+minTemp
+minTemp<-sort(temp[,4],decreasing=T, index.return=T)
+minTemp
+names(playerstats)
+rm(temp)
+temp<-list
+names(temp)<-names(playerstats)
+mode(temp)
+temp<-list()
+mode(temp)
+names(temp)<-names(playerstats)
+dim(playerstats)
+temp<-list(dim<-dim(playerstats))
+dim(temp)
+temp
+temp<-list(dim=dim(playerstats))
+temp
+temp<-vector("list",0)
+temp
+temp[,1] = [1:5]
+temp[,1] <-1:5
+temp[1:5,1] <-1:5
+playerstats[1]
+playerstats[,1]
+playerstats[,2]
+2+@
+2+2
+2+2
+2+2
+2+2
+ls
+ls()
+2+2
+temp
+tN = "DEN"
+temp <- players.teams[[tN]]
+minTemp<-sort(temp[,4], decreasing=T,index.return=T)
+Space <- mean(minTemp[minTemp>0],na.rm=T)-#
+			 sd(minTemp[minTemp>0],na.rm=T)
+minTemp
+mean(minTemp[minTemp>0],na.rm=T)
+minTemp[minTemp>0]
+minTemp[3]
+minTemp[1]
+minTemp[1][3]
+minTemp[1][2]
+minTemp[1][1]
+minTemp[1][1][1]
+mode(minTemp)
+minTemp<-sort(temp[,4], decreasing=T)
+minTemp[minTemp>0]
+Space <- mean(minTemp[minTemp>0],na.rm=T)-#
+			 sd(minTemp[minTemp>0],na.rm=T)
+players.teams[[tN]]<-temp[,temp[,4]>Space]
+players.teams[[tN]]
+temp
+temp[,temp[,4]>Space]
+temp[,4]
+temp[,4]>Space
+dim(temp)
+temp[temp[,4]>Space,]
+ls)
+ls()
+source("/Users/sinn/Documents/R Files/OtherData/MostMinPlayers.R")
+ls()
+sapply(players.teams.new[,4:39],mean)
+sapply(players.teams.new[,][,4:39],mean)
+length(players.teams.new)
+for(i in 1:15) (sapply(players.teams.new[[names(players.teams[i])]][,4:39],mean,na.rm=T))
+names(players.teams)
+dim(players.teams[["DEN"]])
+(players.teams[["DEN"]][3,3])
+(players.teams[["DEN"]][2,3])
+(players.teams[["DEN"]][2,2])
+dim(players.teams[["CHI"]])
+dim(players.teams[["DET"]])
+dim(players.teams[["DAL"]])
+dim(players.teams[["SAS"]])
+dim(players.teams[["DEN"]])
+players.teams = split(playerstats,"PlayerTeams")
+dim(players.teams[["DEN"]])
+dim(players.teams[["SAS"]])
+(split(playerstats,playerstats[["PlayerTeams"]])) -> players.teams
+dim(players.teams[["SAS"]])
+dim(players.teams[["DEN"]])
+source("/Users/sinn/Documents/R Files/OtherData/MostMinPlayers.R")
+for(i in 1:15) (sapply(players.teams.new[[names(players.teams[i])]][,4:39],mean,na.rm=T))
+for(i in 1:15) (sapply(print(players.teams.new[[names(players.teams[i])]][,4:39],mean,na.rm=T)))
+for(i in 1:15) (sapply(players.teams.new[[names(players.teams[i])]][,4:39],mean,na.rm=T))
+for(i in 1:15) (print(sapply(players.teams.new[[names(players.teams[i])]][,4:39],mean,na.rm=T)))
+for(i in 1:15) (print(sapply(players.teams.new[[names(players.teams[i])]][,4:39],mean,na.rm=T,nonames=T)))
+for(i in 1:15) (print(sapply(players.teams.new[[names(players.teams[i])]][,4:39],mean,na.rm=T,USE.NAMES=F)))
+ls()
+rm(temp)
+temp<-vector(length(names(players.teams)))
+temp<-vector("numeric",length=length(names(players.teams)))
+temp
+temp<-vector("list",length=length(names(players.teams)))
+temp
+names(playerstats)
+source("/Users/sinn/Documents/R Files/OtherData/MostMinPlayers.R")
+source("/Users/sinn/Documents/R Files/OtherData/MostMinPlayers.R")
+source("/Users/sinn/Documents/R Files/OtherData/MostMinPlayers.R")
+warnings()
+Stats
+temp
+rm(temp)
+temp<-vector("list",length=length(names(players.teams))
+)
+temp[1]<-vector("numeric",length=4)
+dim(players.teams)
+mode(players.teams)
+mode(players.teams[1])
+dim(players.teams[1])
+dim(players.teams$DEN)
+mode(players.teams$DEN)
+temp<-matrix("numeric",nrows=10,ncols=4)
+temp<-matrix("numeric",nrow=10,ncol=4)
+temp
+temp<-matrix(nrow=10,ncol=4)
+temp
+temp<-matrix(mode="numeric",nrow=10,ncol=4)
+temp<-matrix(nrow=10,ncol=4)
+temp[5,3]<-1
+temp
+source("/Users/sinn/Documents/R Files/OtherData/MostMinPlayers.R")
+Stats
+names(playerstats)[4:8]
+source("/Users/sinn/Documents/R Files/OtherData/MostMinPlayers.R")
+Stats
+names(Stats)
+attributes(Stats)
+source("/Users/sinn/Documents/R Files/OtherData/MostMinPlayers.R")
+source("/Users/sinn/Documents/R Files/OtherData/MostMinPlayers.R")
+dimnames=as.list(TeamNames,as.listnames(playerstats)[4:8]))
+dimnames=as.list(TeamNames,as.listnames(playerstats)[4:8])
+dimnames
+dimnames=(TeamNames,as.listnames(playerstats)[4:8])
+dimnames=c(TeamNames,as.listnames(playerstats)[4:8])
+dimnames=cbind(TeamNames,as.listnames(playerstats)[4:8])
+dimnames=cbind(TeamNames,as.list(names(playerstats)[4:8]))
+dimnames
+source("/Users/sinn/Documents/R Files/OtherData/MostMinPlayers.R")
+dimnames=as.list(TeamNames,as.list(names(playerstats)[4:8]))
+dimnames
+dimnames=cbind(TeamNames,as.list(names(playerstats)[4:8]))
+mode(dimnames)
+source("/Users/sinn/Documents/R Files/OtherData/MostMinPlayers.R")
+dimnames=cbind(TeamNames,as.list(names(playerstats)[4:8]))
+length(dimnames)
+dimnames=c(TeamNames,as.list(names(playerstats)[4:8]))
+length(dimnames)
+dimnames=as.list(c(TeamNames,as.list(names(playerstats)[4:8])))
+length(dimnames)
+dimnames=list(TeamNames,as.list(names(playerstats)[4:8]))
+length(dimnames)
+source("/Users/sinn/Documents/R Files/OtherData/MostMinPlayers.R")
+Stats
+Stats
+players.stats$HOU
+ls()
+players.teams$HOU
+players.teams$NJN
+Stats
+players.teams$SAS
+Stats[1,]
+names(Stats)
+attributes(Stats)
+Stats$dimnames
+dimnames(Stats)
+dimnames(Stats)[1]
+dimnames(Stats)[1][1]
+dimnames(Stats)[[1]][1]
+source("/Users/sinn/Documents/R Files/OtherData/StatsPlot.R")
+source("/Users/sinn/Documents/R Files/OtherData/StatsPlot.R")
+playerstats$TeamNames
+playerstats$Teams
+unique(playerstats$PlayerTeams)
+length(unique(playerstats$PlayerTeams))
+dim(Stats)
+source("/Users/sinn/Documents/R Files/OtherData/StatsPlot.R")
+source("/Users/sinn/Documents/R Files/OtherData/MostMinPlayers.R")
+rm(list=ls())
+ls()
+temp<-read.xls('top_100_school_info.xls')
+temp<-read.table('top_100_school_info.xls', sep='/t')
+temp<-read.table('top_100_school_info.xls', sep='\t')
+load('top_100_school_info.xls')
+ls()
+x <- 1:3
+x
+permn(x)
+library(combinat)
+library(combinat)
+permn(x)
+nCm(5,3)
+nCm(50,3)
+nCm(50,13)
+library(gtools)
+library(gtools)
+source("/Users/sinn/Documents/R Files/Ch5/Ch5GeoDensPlot.R")
+source("/Users/sinn/Documents/R Files/Ch5/Ch5GeoDensPlot.R")
+source("/Users/sinn/Documents/R Files/Ch5/Ch5GeoDensPlot.R")
+source("/Users/sinn/Documents/R Files/Ch5/Ch5GeoDensPlot.R")
+source("/Users/sinn/Documents/R Files/Ch5/Ch5GeoDensPlot.R")
+load('terror.by.Hamas.rda')
+terror<-terror.by.Hammas
+lambda<-1/mean(terror$Killed)
+x<-0:25
+h(terror$Killed, xlab='killed by Ham')
+plot(type=h,terror$Killed, xlab='killed by Ham')
+plot(type="h",terror$Killed, xlab='killed by Ham')
+source("/Users/sinn/Documents/R Files/Ch5/terror-Poisson.r")
+source("/Users/sinn/Documents/R Files/Ch5/killed-by-Hamas.r")
+source("/Users/sinn/Documents/R Files/Ch5/killed-by-Hamas.r")
+source("/Users/sinn/Documents/R Files/Ch5/killed-by-Hamas.r")
+source("/Users/sinn/Documents/R Files/Ch5/killed-by-Hamas.r")
+source("/Users/sinn/Documents/R Files/Ch5/killed-by-Hamas.r")
+terror$Killed
+source("/Users/sinn/Documents/R Files/Ch5/killed-by-Hamas.r")
+source("/Users/sinn/Documents/R Files/Ch5/killed-by-Hamas.r")
+source("/Users/sinn/Documents/R Files/Ch5/killed-by-Hamas.r")
+source("/Users/sinn/Documents/R Files/Ch5/killed-by-Hamas.r")
+head(terror.by.Hammas,3)
+source("/Users/sinn/Documents/R Files/Ch5/killed-by-Hamas.r")
+source("/Users/sinn/Documents/R Files/Ch5/killed-by-Hamas.r")
+source("/Users/sinn/Documents/R Files/Ch5/killed-by-Hamas.r")
+source("/Users/sinn/Documents/R Files/Ch5/killed-by-Hamas.r")
+pgeom(10,.1)
+pgeom(10.5,.1)
+pgeom(20,.1)
+pgeom(11,.1)
+Yellow<-cbind(passengers = c(1,2,3,4,5),
+p.west=c(.4,.3,.2,.1,0),
+p.north=c(.2,.6,.2,0,0))
+Yellow[,1] %*% Yellow[,2]
+Yellow[,1] %*% Yellow[,3]
+dbinom(2,4,.2)
+pbinom(2,4,.2)
+qbinom(2,4,.2)
+rbinom(2,4,.2)
+rbinom(5,4,.2)
+rbinom(5,4,.2)
+rbinom(5,4,.2)
+rbinom(5,4,.2)
+rbinom(5,4,.2)
+rbinom(5,4,.2)
+ls()
+rm(list=ls())
+ls()

@@ -1,0 +1,99 @@
+Year,Metal,Cod,Plaice,Whiting1,Whiting2
+1983,Mercury,0.09,0.08,0.17,0.14
+1983,Copper,0.3,0.2,0.3,0.3
+1983,Zinc,3.4,4.4,3.5,5.8
+1983,Total DDT  ,0.4,0.03,NA,0.11
+1983,Dieldrin,0.2,0.01,NA,0.03
+1983,Total HCH  ,0.1,0.01,NA,0.01
+1983,PCBs  ,5.7,0.5,NA,0.4
+1984,Mercury,0.08,0.06,0.12,0.11
+1984,Copper,0.2,0.1,0.2,0.2
+1984,Zinc,3.2,4.2,3.4,5.6
+1984,Total DDT  ,NA,0.05,0.6,0.13
+1984,Dieldrin,NA,0.04,0.2,0.05
+1984,Total HCH  ,NA,0.01,0.1,0.01
+1984,PCBs  ,NA,0.6,4.2,0.7
+1985,Mercury,0.08,0.05,0.13,0.09
+1985,Copper,0.3,0.3,0.3,0.4
+1985,Zinc,3.3,4.1,3.8,5.2
+1985,Total DDT  ,0.3,0.02,0.4,0.03
+1985,Dieldrin,0.1,0.02,0.1,0.01
+1985,Total HCH  ,0.1,0.01,0.1,0.01
+1985,PCBs  ,2.5,0.1,4.6,0.4
+1986,Mercury,0.08,0.04,0.13,0.11
+1986,Copper,0.2,0.2,0.4,0.3
+1986,Zinc,3.1,4,3.4,5.5
+1986,Total DDT  ,0.3,0.03,NA,0.07
+1986,Dieldrin,0.1,0.02,NA,0.05
+1986,Total HCH  ,0.1,0.01,NA,0.01
+1986,PCBs  ,2.1,0.1,NA,0.3
+1987,Mercury,0.08,0.05,0.12,0.11
+1987,Copper,0.2,0.2,0.3,0.3
+1987,Zinc,3.5,4.4,4.3,4.6
+1987,Total DDT  ,0.2,0.03,0.7,0.07
+1987,Dieldrin,0.1,0.01,0.1,0.02
+1987,Total HCH  ,0.1,0.02,0.1,0.01
+1987,PCBs  ,2.3,0.1,3.3,0.4
+1988,Mercury,0.08,0.06,0.12,0.12
+1988,Copper,0.2,0.3,0.3,0.3
+1988,Zinc,3.3,4.5,3.7,5.2
+1988,Total DDT  ,0.4,0.05,0.7,0.06
+1988,Dieldrin,0.1,0.01,0.1,0.01
+1988,Total HCH  ,0.1,0.02,0.1,0.01
+1988,PCBs  ,2.9,0.3,4.4,0.5
+1989,Mercury,0.1,0.05,0.13,0.1
+1989,Copper,0.2,0.3,0.3,0.3
+1989,Zinc,3.3,4.1,3.7,5.2
+1989,Total DDT  ,0.2,0.02,0.4,0.06
+1989,Dieldrin,0.1,0.01,0.1,0.02
+1989,Total HCH  ,0.1,0.01,0.1,0.02
+1989,PCBs  ,2.2,0.1,3.5,0.5
+1990,Mercury,0.09,0.05,0.13,NA
+1990,Copper,0.2,0.2,0.2,NA
+1990,Zinc,3.5,3.7,3.6,NA
+1990,Total DDT  ,0.2,0.01,0.3,NA
+1990,Dieldrin,0.1,0.01,0.1,NA
+1990,Total HCH  ,0.1,0.1,0.1,NA
+1990,PCBs  ,2.1,0.1,2.5,NA
+1991,Mercury,0.06,0.05,0.11,NA
+1991,Copper,0.2,0.3,NA,NA
+1991,Zinc,3.2,4.9,3.4,NA
+1991,Total DDT  ,0.2,0.01,0.4,NA
+1991,Dieldrin,0.1,0.01,0.1,NA
+1991,Total HCH  ,0.1,0.1,0.1,NA
+1991,PCBs  ,2.1,0.1,2.8,NA
+1992,Mercury,NA,NA,NA,0.1
+1992,Copper,NA,NA,NA,0.2
+1992,Zinc,NA,NA,NA,4.7
+1992,Total DDT  ,NA,NA,NA,0.04
+1992,Dieldrin,NA,NA,NA,0.01
+1992,Total HCH  ,NA,NA,NA,0.01
+1992,PCBs  ,NA,NA,NA,0.3
+1993,Mercury,0.07,0.05,0.13,0.09
+1993,Copper,0.1,0.2,0.3,0.3
+1993,Zinc,3,4.3,4.5,5.3
+1993,Total DDT  ,0.2,0.01,0.4,0.07
+1993,Dieldrin,0.1,0.01,0.1,0.01
+1993,Total HCH  ,0.1,0.1,0.1,0.02
+1993,PCBs  ,1.4,0.1,1.9,0.4
+1994,Mercury,0.07,0.05,NA,NA
+1994,Copper,0.2,NA,NA,NA
+1994,Zinc,3.8,4.1,NA,NA
+1994,Total DDT  ,0.2,0.1,NA,NA
+1994,Dieldrin,0.1,0.1,NA,NA
+1994,Total HCH  ,0.1,0.1,NA,NA
+1994,PCBs  ,2.3,0.1,NA,NA
+1995,Mercury,NA,NA,NA,0.09
+1995,Copper,NA,NA,NA,0.3
+1995,Zinc,NA,NA,NA,5.3
+1995,Total DDT  ,NA,NA,NA,0.04
+1995,Dieldrin,NA,NA,NA,0.01
+1995,Total HCH  ,NA,NA,NA,0.1
+1995,PCBs  ,NA,NA,NA,0.3
+1996,Mercury,0.07,NA,NA,NA
+1996,Copper,NA,NA,NA,NA
+1996,Zinc,NA,NA,NA,NA
+1996,Total DDT  ,0.2,NA,NA,NA
+1996,Dieldrin,0.1,NA,NA,NA
+1996,Total HCH  ,0.1,NA,NA,NA
+1996,PCBs  ,1.6,NA,NA,NA

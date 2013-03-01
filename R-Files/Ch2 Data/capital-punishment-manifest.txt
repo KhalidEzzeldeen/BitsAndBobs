@@ -1,0 +1,56 @@
+File Manifest for ICPSR 3667
+
+U.S. Dept. of Justice, Bureau of Justice Statistics. CAPITAL PUNISHMENT IN
+THE UNITED STATES, 1973-2000 [Computer file]. Compiled by the U.S. Dept. of
+Commerce, Bureau of the Census. ICPSR ed. Ann Arbor, MI: Inter-university
+Consortium for Political and Social Research [producer and distributor],
+2003.
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Case      Var.    File    Date        MD5
+                                        Length  Count     Count     Count   Struct. Updated     Checksum
+
+    03667-related_literature.txt        -       -         -         -       -       2008-04-11  -
+
+    03667-manifest.txt                  -       -         -         -       -       2008-04-12  -
+
+
+DS0001 Capital Punishment in the United States, 1973-2000
+
+    Filename                            Record  Record    Case      Var.    File    Date        MD5
+                                        Length  Count     Count     Count   Struct. Updated     Checksum
+
+    03667-0001-Codebook.pdf             -       -         -         -       -       2003-02-27  eed2393d53cb9d899b4f382431b473ea
+
+    03667-0001-Data.dta                 -       -         7,658     37      -       2005-03-10  c6c22cc11103cb33a51d784e1de0cb10
+
+    03667-0001-Data.por                 -       -         7,658     37      -       2005-03-10  5489aedac05e59b85aea7977c5edcbab
+
+    03667-0001-Data.txt                 81      7,658     7,658     37      rect.   2003-02-27  16b91695718a65a2b51642c3cd476214
+
+    03667-0001-Data.xpt                 -       -         7,658     37      -       2005-03-10  4943f4ba8165421f103dc9253e9f53ca
+
+    03667-0001-Setup.dct                -       -         -         -       -       2005-03-10  ee6a721b200c69a5efd4c5cfe4e68f0c
+
+    03667-0001-Setup.do                 -       -         -         -       -       2005-03-10  ea43cb324800fe6af2a2f95eceefd937
+
+    03667-0001-Setup.sas                -       -         -         -       -       2003-02-27  ae11151a985a2642f1104f3dad2fa613
+
+    03667-0001-Setup.sps                -       -         -         -       -       2003-02-27  cddab09ac0a31aa85130f0778a1125f4
+
+    03667-0001-Supplemental_syntax.do   -       -         -         -       -       2005-03-10  0c2e512d91c5821051ca058025f5f7c3
+
+    03667-0001-Supplemental_syntax.sas  -       -         -         -       -       2005-03-10  3f3881a1adc9c0c2a71e8cbbbce65008
+
+
+Version History
+
+2005-11-04  On 2005-03-14 new files were added to one or  more datasets.
+These files included additional setup files as well as one or more of the
+following: SAS  program, SAS transport, SPSS portable,  and Stata system
+files. The  metadata record was revised  2005-11-04 to  reflect these
+additions.

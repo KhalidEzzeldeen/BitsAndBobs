@@ -1,0 +1,5 @@
+x=c(2,4,6,8)
+p=c(1/5,2/6,2/6,1/6)
+windows(width = 3, height = 3, pointsize = 8)
+plot(x,p,type='h',lwd=4,ylim=c(-.01,.35))
+abline(h=0,lwd=4)

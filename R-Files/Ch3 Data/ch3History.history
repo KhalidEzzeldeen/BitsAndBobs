@@ -1,0 +1,254 @@
+stack(g)
+g[,c(1,3)]
+stack(g[,c(1,3)])
+dim(g[,c(1,3)])
+g[,c(2,4)]
+stack(g[,c(2,4)])
+is.numeric(g[,c(1,3)])
+is.numeric(g[,c(2,4)])
+stack(g[,c(1,3)])
+attributes(g[,c(1,3)])
+attributes(g[,c(2,4)])
+stack(g[,c(1,3)])[,1]
+stack(g[,c(1,3)])[,2]
+stack(g[,c(1,3)])[,1]
+stack(g[,c(1,3)])[,]
+(g[,c(1,3)])
+(g[,c(1)])
+(g[,c(2)])
+(g[,c(3)])
+help(stack)
+reshape(g[,c(1,3)])
+reshape(g,v.names="letter")
+stack(as.character(g[,c(1,3)]))
+g[,c(1,3)]
+as.character(g[,c(1,3)])
+attributes(g[,1])
+attributes(g[,2])
+g$levels[,1]
+g$class[,1]
+g[,1]$class
+g[,1]
+attributes(LETTERS[1:6])
+b<-data.frame(letter=LETTERS[4:9]);#
+>  b<-data.frame(b,code=apply(b,1,utf8ToInt))
+b<-data.frame(letter=LETTERS[4:9]);#
+ b<-data.frame(b,code=apply(b,1,utf8ToInt))
+b
+attributes(b)
+attributes(b[,1])
+b$class[,1]=NA
+b$class[,1]
+stack(as.character(g[,c(1,3)]))
+stack(g[,c(1,4)])
+stack(g[,c(2,4)])
+g
+stack(g,select=letter)
+print(g,select=letter)
+stack(g,select='letter')
+stack(g,select="letter")
+g$letter
+stack(g$letter)
+g[["letter"]]
+g[g[["letter"]]]
+sapply(g$letter,stack)
+stack(data.frame(g[,1],g[,3]))
+g
+test<-stack(g[,c(2,4)])
+test
+levels(test$ind)<-c('begin','end')
+test
+tapply(test$values,test$ind,mean)
+test = "hello world"
+is.string(test)
+substr(test,1,4)
+substr(test,3,7)
+a<-c(A,B,C,D,E,F,G,H,I,J)
+a
+a<-LETTERS[1:10]
+b<-c(59,51,72,79,79,83,69,51,87)
+d.f<-data.frame(names=a,scores=b)
+b<-c(59,51,72,79,79,83,69,81,51,87)
+d.f<-data.frame(names=a,scores=b)
+d.f$names
+d.f[,1]
+v<-as.integer(c(1,2,3))
+is.integer(v)
+v<-c(1,2,3)
+is.integer(v)
+set.seed(1)
+i<-as.integer(runif(10,1,5))
+i
+table(i)
+help(runif)
+options(prompt = 'ch3>', continue = "+ ")
+history(25)
+grad<-read.table('graduation.txt')
+grad<-read.table('graduation.txt',header=T,sep='/t')
+grad<-read.table('graduation.txt',header=T,sep='\t')
+dim(grad)
+head(grad)
+names(grad)<-c('region','state', '% 00-01','n 00-01','% 01-02', 'n 01-02', '% 02-03', 'n 02-03')
+head(grad[,1:6])
+round(apply(grad[,3:8],2,mean),1)
+round(apply(grad[,3:8],2,mean),2)
+pct <- round(apply(grad[,c(3,5,7)],1,mean),1)
+n <- round(apply(grad[,c(4,6,8)],1,mean),1)
+by.state <- data.frame(grad[,'state'],pct,n)
+names(by.state)<-c('state', %, n)
+names(by.state)<-c('state', '%', 'n')
+head(by.state)
+help(apply)
+pct.region <- round(tapply(by.state[,2], grad$region,mean),0)
+n.region <- round(tapply(by.state[,3],grad$region,mean),0)
+rbind('%' = pct.region, n = n.region)
+unique(grad$region)
+region <- c(as.character(state.region[1:8]),
+as.character(state.region[4]),
+as.character(state.region[9:50]))
+grad$region <-as.factor(region)
+head(grad[,1:6],3)
+pct.region <- round(tapply(by.state[,2], grad$region,mean),0)
+n.region <- round(tapply(by.state[,3],grad$region,mean),0)
+rbind('%' = pct.region, n = n.region)
+grad.split <-split(grad[,3:8],grad$region)
+names(grad.split)
+dim(grad.split)
+grad.split$West
+length(grad.split)
+dim(grad.split$West)
+grad.split
+round(sapply(grad.split,mean),0)
+ls()
+rm(list=ls())
+ls()
+load('who.pop.2000.rda')
+load('who.ccodes.rda')
+load('who.pop.var.names.rda')
+cn <-'Austria'
+#cn <- 'Armenia'
+cc <- who.ccodes$code[who.ccodes$name == cn]
+help(mfrow)
+par(mfrow = c(2,1))
+help(par)
+b1 <- as.character(pop.var.names$descr[2:26])
+gender<-1
+rows<-who.pop.2000$code==cc & who.pop.2000$sex==gender
+columns <-5:29
+barplot(t(who.pop.2000[rows,columns])[,1]/1000,
+names.arg=bl,main=paste(cn,',males'),
+las=2,col='blue90')
+bl <- as.character(pop.var.names$descr[2:26])
+barplot(t(who.pop.2000[rows,columns])[,1]/1000,
+names.arg=bl,main=paste(cn,',males'),
+las=2,col='blue90')
+barplot(t(who.pop.2000[rows,columns])[,1]/1000,
+names.arg=bl,main=paste(cn,',males'),
+las=2,col='blue')
+gender<-2
+rows<-who.pop.2000$code==cc & who.pop.2000$sex==gender
+barplot(t(who.pop.2000[rows,columns])[,1]/1000,
+names.arg=bl,main=paste(cn,',females'),
+las=2,col='red')
+source("/Users/sinn/Documents/R Files/Ch3 Data/whoAustArme.R")
+source("/Users/sinn/Documents/R Files/Ch3 Data/whoAustArme.R")
+whoAustArme
+source("/Users/sinn/Documents/R Files/Ch3 Data/whoAustArme.R")
+source("/Users/sinn/Documents/R Files/Ch3 Data/whoAustArme.R")
+source("/Users/sinn/Documents/R Files/Ch3 Data/whoAustArme.R")
+source("/Users/sinn/Documents/R Files/Ch3 Data/whoAustArme.R")
+source(whoAustArme.R)
+source("whoAustArme.R")
+source("whoAustArme.R")
+pop.var.names$descr
+pop.var.names$descr[2:26]
+source("whoAustArme.R")
+cn <-'Australia'#
+#cn <- 'Armenia'#
+cc <- who.ccodes$code[who.ccodes$name == cn]
+cc
+rows<-who.pop.2000$code==cc & who.pop.2000$sex==1
+rows
+rows<-who.pop.2000$code==cc
+rows
+length(who.pop.2000)
+names(who.pop.2000)
+who.pop.2000$names
+who.pop.2000$code
+is.element(who.pop.2000$code,5020)
+help(runif)
+who.pop.2000$code[3]
+help(for)
+help(while)
+for(i in 1:length(who.pop.2000$code)) print(who.ccodes$name[who.ccodes$code==who.pop.2000$code[i]])
+for(i in 1:length(who.pop.2000$code)) (who.ccodes$name[who.ccodes$code==who.pop.2000$code[i]])
+test <-character(length(who.pop.2000$code))
+for(i in 1:length(who.pop.2000$code)) (test[i] <- who.ccodes$name[who.ccodes$code==who.pop.2000$code[i]])
+length(test)
+length(unique(test))
+test<-unique(test)
+test
+as.character(test)
+who.ccodes
+who.ccodes[2,2]
+who.ccodes[1,2]
+who.ccodes[2,1]
+names(who.ccodes)
+attributes(who.ccodes)
+as.character(who.ccodes[2,2])
+no.quote(as.character(who.ccodes[2,2]))
+noquote(as.character(who.ccodes[2,2]))
+test <-vector(length(who.pop.2000$code))
+rm(test)
+test <-vector(length(who.pop.2000$code))
+test <-data.form(length(who.pop.2000$code))
+mode(who.pop.2000)
+mode(who.ccodes)
+test <-list(length(who.pop.2000$code))
+test
+help(list)
+test <-vector(as.integerlength(who.pop.2000$code)))
+test <-vector(as.integer(length(who.pop.2000$code)))
+test <-vector(mode = "character,length = as.integer(length(who.pop.2000$code)))
+)
+test
+test <- vector(mode = "character",length = as.integer(length(who.pop.2000$code)))
+test
+for(i in 1:length(who.pop.2000$code)) (test[i] <- noquotes(as.character(who.ccodes$name[who.ccodes$code==who.pop.2000$code[i]])))
+for(i in 1:length(who.pop.2000$code)) (test[i] <- noquote(as.character(who.ccodes$name[who.ccodes$code==who.pop.2000$code[i]])))
+length(test)
+test
+is.element(test,"Venezuela")
+find(test,"Venezuela")
+help(find)
+find(is.element(test,"Venezuela"))
+apropos(is.element(test,"Venezuela"))
+sum(is.numeric(is.element(test,"Venezuela")))
+table(test=="Venezuela")
+table(test=="United Kingdom")
+table(test=="\"United Kingdom")
+table(test=="Poland")
+source("/Users/sinn/Documents/R Files/Ch3 Data/distHisto.R")
+source("/Users/sinn/Documents/R Files/Ch3 Data/distHisto.R")
+source("/Users/sinn/Documents/R Files/Ch3 Data/distHisto.R")
+who <-read.csv('who.by.continents.and.regions.txt', sep='\t')
+m.region<-tapply(who$dr, who$region,mean,na.rm=T)
+dotchart(m.region,xlab='death rate')
+mode(m.region)
+mode(who)
+names(who)
+dotchart(m.region,xlab='death rate per 1000')
+is.array(m.region)
+is.list(m.region)
+source("/Users/sinn/Documents/R Files/Ch3 Data/whoScatter.R")
+source("/Users/sinn/Documents/R Files/Ch3 Data/whoScatter.R")
+source("/Users/sinn/Documents/R Files/Ch3 Data/whoScatter.R")
+help(identify)
+manua <-scan()
+pairs(who.fert.mort[,7:9])
+names(who.fert.mort)
+mode(who.fert.mort)
+library(lattice)
+d<-who.fert.mort
+xyplot(d[,9] ~ d[,7] | d[,3], xlab = '% growth',
+ylab = 'death rate', par.strip.text = list(cex=0.6))

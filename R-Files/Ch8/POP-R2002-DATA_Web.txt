@@ -1,0 +1,229 @@
+continent	region	country	population	density	% urban	% growth	birth rate	death rate	fertility	under 5 mortaility
+Africa	Eastern Africa	Burundi	6825.1	245.2	9.9	3.1	44.2	20.6	6.8	187.7
+Africa	Eastern Africa	Comoros	768.2	343.7	35	2.8	36.7	8.4	4.9	92
+Africa	Eastern Africa	Djibouti	702.5	30.3	84.6	1.6	39.5	17.7	5.7	176.6
+Africa	Eastern Africa	Eritrea	4141.1	35.2	19.9	3.7	39.7	11.9	5.4	105.9
+Africa	Eastern Africa	Ethiopia	70678	64	16.6	2.5	42.5	17.7	6.1	173.2
+Africa	Eastern Africa	Kenya	31987.1	55.1	36.3	1.5	32.5	16.7	4	117.6
+Africa	Eastern Africa	Madagascar	17403.6	29.6	31.4	2.8	41.6	13.2	5.7	147
+Africa	Eastern Africa	Malawi	12105.3	102.2	15.8	2	44.6	24.1	6.1	186.4
+Africa	Eastern Africa	Mauritius	1221.3	598.7	42.2	1	16.2	6.7	1.9	17.9
+Africa	Eastern Africa	Mozambique	18863.3	23.5	35.6	1.8	41.2	23.5	5.6	215.1
+Africa	Eastern Africa	Réunion	756.2	301.3	73.4	1.4	18.6	5.5	2.3	10.3
+Africa	Eastern Africa	Rwanda	8387.2	318.4	6.5	2.2	44	21.8	5.7	178.6
+Africa	Eastern Africa	Seychelles	81	178	66.2	0.9	NA	NA	NA	NA
+Africa	Eastern Africa	Somalia	9890.1	15.5	28.8	4.2	52.1	17.7	7.3	195.3
+Africa	Eastern Africa	Uganda	25827	109.5	15.3	3.2	50.7	16.7	7.1	146.6
+Africa	Eastern Africa	United Republic of Tanzania	36976.6	39.1	35.4	1.9	39.3	18.1	5.1	161.6
+Africa	Eastern Africa	Zambia	10812.1	14.4	40.2	1.2	42.2	28	5.6	185.5
+Africa	Eastern Africa	Zimbabwe	12891.2	33	37.5	0.5	32.1	27	3.9	113.7
+Africa	Middle Africa	Angola	13624.8	10.9	36.2	3.2	52.3	23.6	7.2	246.8
+Africa	Middle Africa	Cameroon	16017.9	33.7	51.2	1.8	35.4	16.9	4.6	148.5
+Africa	Middle Africa	Central African Republic	3864.9	6.2	42.6	1.3	37.7	22.1	4.9	173.3
+Africa	Middle Africa	Chad	8597.6	6.7	24.9	3	48.4	19.5	6.7	200.6
+Africa	Middle Africa	Congo	3723.6	10.9	67.4	2.6	44.2	15.4	6.3	125
+Africa	Middle Africa	Dem. Republic of the Congo	52771.2	22.5	31.6	2.9	50.2	21.4	6.7	219.3
+Africa	Middle Africa	Equatorial Guinea	494.2	17.6	51.5	2.6	43.1	16.7	5.9	172.7
+Africa	Middle Africa	Gabon	1328.6	5	83.8	1.8	31.6	11.5	4	92
+Africa	Middle Africa	Sao Tome and Principe	160.6	166.6	49.1	2.5	33.2	5.8	4	41.5
+Africa	Northern Africa	Algeria	31799.7	13.4	58.8	1.7	22.8	5.5	2.8	48.5
+Africa	Northern Africa	Egypt	71931	71.8	42.8	2	26.6	6.2	3.3	47.9
+Africa	Northern Africa	Libyan Arab Jamahiriya	5550.9	3.2	88.6	1.9	23.2	4.2	3	22.7
+Africa	Northern Africa	Morocco	30565.9	68.4	57.4	1.6	23.2	6	2.7	52.1
+Africa	Northern Africa	Sudan	33609.9	13.4	38.9	2.2	33	11.7	4.4	127.2
+Africa	Northern Africa	Tunisia	9832.3	60.1	67.4	1.1	17	5.5	2	26.4
+Africa	Northern Africa	Western Sahara	308.4	1.2	96.3	2.6	27.5	7.9	3.9	70.9
+Africa	Southern Africa	Botswana	1785	3.1	50.2	0.9	30.6	21.4	3.7	104.1
+Africa	Southern Africa	Lesotho	1801.7	59.4	30.3	0.1	31.1	25.7	3.8	152.1
+Africa	Southern Africa	Namibia	1987.5	2.4	32.4	1.4	33.4	17.9	4.6	107.2
+Africa	Southern Africa	South Africa	45026.5	36.9	59.3	0.6	22.6	16.9	2.6	80.1
+Africa	Southern Africa	Swaziland	1077.3	62	27.3	0.8	34.5	25.4	4.5	146.6
+Africa	Western Africa	Benin	6736.3	59.8	44.6	2.6	41.5	14.3	5.7	155.7
+Africa	Western Africa	Burkina Faso	13002.5	47.4	17.6	3	47.8	17.4	6.7	160.2
+Africa	Western Africa	Cape Verde	463.2	114.9	65.9	2	27.7	5.4	3.3	35.9
+Africa	Western Africa	Cote dIvoire	16630.8	51.6	44.9	1.6	35.5	20	4.7	173.1
+Africa	Western Africa	Gambia	1425.6	126.2	32.5	2.7	35.8	12.7	4.7	134.1
+Africa	Western Africa	Ghana	20922.3	87.7	37	2.2	31.9	10	4.1	93.4
+Africa	Western Africa	Guinea	8480.3	34.5	28.9	1.6	42.9	16.1	5.8	175.8
+Africa	Western Africa	Guinea-Bissau	1492.7	41.3	33.9	2.9	49.9	19.6	7.1	209.8
+Africa	Western Africa	Liberia	3367.1	30.2	46.7	4	50	21.5	6.8	229.3
+Africa	Western Africa	Mali	13006.7	10.5	32.3	3	49.9	16.2	7	181
+Africa	Western Africa	Mauritania	2892.9	2.8	61.8	3	41.8	14.2	5.8	156.4
+Africa	Western Africa	Niger	11971.7	9.4	22.1	3.6	55.2	19.1	8	209.9
+Africa	Western Africa	Nigeria	124009.2	134.2	46.6	2.5	39.1	13.7	5.4	132.7
+Africa	Western Africa	Saint Helena	5	41.3	74.1	0	NA	NA	NA	NA
+Africa	Western Africa	Senegal	10094.5	51.3	49.6	2.4	37.1	12.2	5	112.1
+Africa	Western Africa	Sierra Leone	4970.9	69.3	38.7	3.8	49.6	29.3	6.5	307.3
+Africa	Western Africa	Togo	4909.3	86.5	35.1	2.3	38.5	14.7	5.3	136.4
+Asia	Eastern Asia	China	1304196	135.9	38.6	0.7	14.5	7	1.8	42.7
+Asia	Eastern Asia	China, Hong Kong SAR	7049.4	6745.9	100	1.1	8.5	5.9	1	5.2
+Asia	Eastern Asia	China, Macao SAR	463.9	25774.5	98.9	0.9	9.7	4.7	1.1	9.5
+Asia	Eastern Asia	Dem. Peoples Rep. of Korea	22663.9	188	61.1	0.5	16.3	11	2	58.4
+Asia	Eastern Asia	Japan	127653.9	337.9	79.2	0.1	9.2	8.2	1.3	4.4
+Asia	Eastern Asia	Mongolia	2593.9	1.7	56.7	1.3	22.5	7.2	2.4	85.5
+Asia	Eastern Asia	Republic of Korea	47700	481.7	83.6	0.6	11.9	5.9	1.4	7.1
+Asia	South-central Asia	Afghanistan	23896.9	36.6	23.2	3.9	47.4	21.5	6.8	280.2
+Asia	South-central Asia	Bangladesh	146736.1	1019	26.7	2	28.9	8.3	3.5	87.4
+Asia	South-central Asia	Bhutan	2257.4	48	7.9	3	34.5	8.6	5	80
+Asia	South-central Asia	India	1065462.3	324.1	28.3	1.5	23.8	8.5	3	84
+Asia	South-central Asia	Iran (Islamic Republic of)	68919.6	41.8	66.2	1.2	20.3	5.3	2.3	38.8
+Asia	South-central Asia	Kazakhstan	15433	5.7	55.8	-0.4	16.2	9.5	2	58.1
+Asia	South-central Asia	Kyrgyzstan	5137.8	25.9	34.3	1.4	21.9	7.1	2.6	46
+Asia	South-central Asia	Maldives	318.3	1068	28.9	3	35.8	6.1	5.3	48.6
+Asia	South-central Asia	Nepal	25164.2	178.7	12.9	2.2	32.9	9.7	4.3	98.4
+Asia	South-central Asia	Pakistan	153577.8	192.9	34.1	2.4	35.9	9.6	5.1	127.8
+Asia	South-central Asia	Sri Lanka	19065.4	290.6	23.7	0.8	16.4	6.6	2	23.4
+Asia	South-central Asia	Tajikistan	6244.9	43.6	27.6	0.9	24.5	6	3.1	72.6
+Asia	South-central Asia	Turkmenistan	4866.8	10	45.3	1.5	22.2	6.5	2.7	67.7
+Asia	South-central Asia	Uzbekistan	26092.6	58.3	36.6	1.5	21.7	5.8	2.4	51.8
+Asia	South-eastern Asia	Brunei Darussalam	358	62.1	73.8	2.3	23.5	2.8	2.5	7.4
+Asia	South-eastern Asia	Cambodia	14143.5	78.1	18.6	2.4	33.9	10	4.8	107.1
+Asia	South-eastern Asia	Dem. Republic of Timor-Leste	778.2	52.3	7.6	4	23.8	13.2	3.8	182.6
+Asia	South-eastern Asia	Indonesia	219883.5	115.5	44.1	1.3	20.7	7.3	2.4	52.3
+Asia	South-eastern Asia	Lao Peoples Dem. Republic	5657.3	23.9	20.6	2.3	35.6	12.6	4.8	140.6
+Asia	South-eastern Asia	Malaysia	24424.6	74.1	59.5	1.9	22.6	4.6	2.9	13
+Asia	South-eastern Asia	Myanmar	49485.5	73.1	29.1	1.3	23.9	11.2	2.9	127.7
+Asia	South-eastern Asia	Philippines	79999	266.7	61	1.8	25.3	5.1	3.2	35
+Asia	South-eastern Asia	Singapore	4252.8	6881.6	100	1.7	10.2	5.2	1.4	4
+Asia	South-eastern Asia	Thailand	62833.3	122.5	20.4	1	17.3	7.1	1.9	24.9
+Asia	South-eastern Asia	Viet Nam	81376.7	245.3	25.4	1.3	20.2	6.4	2.3	44.8
+Asia	Western Asia	Armenia	3060.9	102.7	67.4	-0.5	9.7	7.7	1.2	19.8
+Asia	Western Asia	Azerbaijan	8370.1	96.7	51.8	0.9	17.8	5.6	2.1	40
+Asia	Western Asia	Bahrain	724.3	1068.3	93.1	2.2	19.9	3.1	2.7	18.1
+Asia	Western Asia	Cyprus	801.9	86.7	70.8	0.8	13.2	7.5	1.9	8.2
+Asia	Western Asia	Georgia	5125.6	73.5	57	-0.9	10.4	9.9	1.4	21.8
+Asia	Western Asia	Iraq	25174.6	57.4	67.4	2.7	35.1	8.8	4.8	107.8
+Asia	Western Asia	Israel	6433.4	290.5	92.1	2	19.8	6	2.7	9.3
+Asia	Western Asia	Jordan	5472.8	61.3	79	2.7	28	4.3	3.6	27.2
+Asia	Western Asia	Kuwait	2521.4	141.5	96.3	3.5	20.2	1.9	2.7	13
+Asia	Western Asia	Lebanon	3652.5	351.2	90.7	1.6	19.1	5.4	2.2	19.9
+Asia	Western Asia	Occupied Palestinian Territory	3557.5	572.6	67.7	3.6	38.8	4.3	5.6	24.2
+Asia	Western Asia	Oman	2851	13.4	77.6	2.9	31.8	3.3	5	23
+Asia	Western Asia	Qatar	610.1	55.5	93.3	1.5	17.4	3.7	3.2	14.6
+Asia	Western Asia	Saudi Arabia	24217	11.3	87.7	2.9	31.5	3.7	4.5	24.1
+Asia	Western Asia	Syrian Arab Republic	17799.5	96.1	52.5	2.4	27.7	3.9	3.3	26.3
+Asia	Western Asia	Turkey	71325.2	91.5	67	1.4	20.9	6	2.4	49.5
+Asia	Western Asia	United Arab Emirates	2994.8	35.8	88.1	1.9	16.7	2.4	2.8	15.4
+Asia	Western Asia	Yemen	20010.3	37.9	25.6	3.5	45	9.2	7	97.6
+Europe	Eastern Europe	Belarus	9895.1	47.7	69.9	-0.5	8.8	13.2	1.2	14.8
+Europe	Eastern Europe	Bulgaria	7896.5	71.2	67.4	-0.8	7.9	15.1	1.1	19.2
+Europe	Eastern Europe	Czech Republic	10235.5	129.8	74.6	-0.1	8.8	10.8	1.2	5.9
+Europe	Eastern Europe	Hungary	9876.9	106.2	65.4	-0.5	8.8	13.5	1.2	11
+Europe	Eastern Europe	Poland	38587.3	119.4	63	-0.1	9.6	10	1.3	10.7
+Europe	Eastern Europe	Republic of Moldova	4266.6	126.6	41.6	-0.1	11.5	10.7	1.4	23.6
+Europe	Eastern Europe	Romania	22333.9	94	55.6	-0.2	10.4	12.5	1.3	24.7
+Europe	Eastern Europe	Russian Federation	143246.2	8.4	72.9	-0.6	8.6	14.6	1.1	22
+Europe	Eastern Europe	Slovakia	5402.4	110.2	58	0.1	10.2	9.8	1.3	10
+Europe	Eastern Europe	Ukraine	48523.1	80.4	68.1	-0.8	8.4	14.2	1.2	17.9
+Europe	Northern Europe	Channel Islands	144.8	742.7	28.9	0.1	10.9	10.1	1.5	6.5
+Europe	Northern Europe	Denmark	5363.8	124.5	85.1	0.2	11.8	11.3	1.8	6.5
+Europe	Northern Europe	Estonia	1323.1	29.3	69.4	-1.1	8.7	13.6	1.2	11.4
+Europe	Northern Europe	Faeroe Islands	46.8	33.5	39.5	0.7	NA	NA	NA	NA
+Europe	Northern Europe	Finland	5206.7	15.4	58.6	0.2	10.8	9.8	1.7	4.8
+Europe	Northern Europe	Iceland	289.6	2.8	93	0.8	14.1	6.9	2	4.2
+Europe	Northern Europe	Ireland	3955.6	56.3	59.8	1.1	14.4	8.3	1.9	7
+Europe	Northern Europe	Isle of Man	74.8	127.2	77.4	0.5	NA	NA	NA	NA
+Europe	Northern Europe	Latvia	2307.5	35.8	59.9	-0.9	7.8	13.6	1.1	17.7
+Europe	Northern Europe	Lithuania	3443.6	52.8	68.9	-0.6	8.8	11.6	1.3	11.3
+Europe	Northern Europe	Norway	4533.1	14	75.5	0.4	12	9.9	1.8	5.9
+Europe	Northern Europe	Sweden	8876.2	19.7	83.3	0.1	10.3	10.6	1.6	4.3
+Europe	Northern Europe	United Kingdom	59250.6	242.7	89.7	0.3	11	10.4	1.6	6.5
+Europe	Southern Europe	Albania	3166.2	110.1	44.2	0.7	18.2	5.4	2.3	34.1
+Europe	Southern Europe	Andorra	71.2	157.2	91.7	2.6	NA	NA	NA	NA
+Europe	Southern Europe	Bosnia and Herzegovina	4161.5	81.4	44.3	1.1	9.7	8.1	1.3	15.7
+Europe	Southern Europe	Croatia	4427.9	78.3	59	-0.2	11.1	11.8	1.7	9.2
+Europe	Southern Europe	Gibraltar	27.2	4541.5	100	0.1	NA	NA	NA	NA
+Europe	Southern Europe	Greece	10976.3	83.2	60.8	0.1	9.1	10.5	1.3	7.7
+Europe	Southern Europe	Holy See	0.8	1784.1	100	0	NA	NA	NA	NA
+Europe	Southern Europe	Italy	57423	190.6	67.4	-0.1	8.8	10.9	1.2	6.6
+Europe	Southern Europe	Malta	394.3	1247.7	91.7	0.4	11.8	7.9	1.8	8.3
+Europe	Southern Europe	Portugal	10061.5	108.9	68.3	0.1	11	10.8	1.5	8.1
+Europe	Southern Europe	San Marino	27.6	452.4	90.7	1	NA	NA	NA	NA
+Europe	Southern Europe	Serbia and Montenegro	10526.8	103	52	-0.1	11.7	10.6	1.7	15.3
+Europe	Southern Europe	Slovenia	1984.1	98	49.1	-0.1	8.3	9.8	1.1	7.3
+Europe	Southern Europe	Spain	41060.4	81.3	78.3	0.2	9.3	9.1	1.2	6.5
+Europe	Southern Europe	TFYR Macedonia	2055.9	80	59.5	0.5	14.5	8.4	1.9	18.3
+Europe	Western Europe	Austria	8116.2	96.8	67.7	0	8.6	9.9	1.3	5.6
+Europe	Western Europe	Belgium	10318.4	338.1	97.5	0.2	10.8	10	1.7	5.9
+Europe	Western Europe	France	60144.1	109.1	75.9	0.5	12.8	9.3	1.9	6.1
+Europe	Western Europe	Germany	82475.6	231.2	88.1	0.1	8.7	10.6	1.4	5.5
+Europe	Western Europe	Liechtenstein	33.6	209.7	21.9	0.8	NA	NA	NA	NA
+Europe	Western Europe	Luxembourg	453.1	175.2	92.6	1.3	12.6	8.2	1.7	6.7
+Europe	Western Europe	Monaco	34.4	23089.9	100	0.9	NA	NA	NA	NA
+Europe	Western Europe	Netherlands	16149.2	395.4	89.8	0.5	12.1	8.9	1.7	6.2
+Europe	Western Europe	Switzerland	7168.7	173.6	67.4	0	8.7	9.8	1.4	5.9
+Latin America and the Caribbean	Caribbean	Anguilla	11.8	123.4	100	1.7	NA	NA	NA	NA
+Latin America and the Caribbean	Caribbean	Antigua and Barbuda	73	165.9	37.7	0.5	NA	NA	NA	NA
+Latin America and the Caribbean	Caribbean	Aruba	99.5	515.5	51.4	2	NA	NA	NA	NA
+Latin America and the Caribbean	Caribbean	Bahamas	313.8	22.6	89.4	1.1	19.4	8.2	2.3	24.5
+Latin America and the Caribbean	Caribbean	Barbados	270.4	628.8	51.6	0.4	12.2	7.8	1.5	12.1
+Latin America and the Caribbean	Caribbean	British Virgin Islands	20.9	136.7	63.7	1.8	NA	NA	NA	NA
+Latin America and the Caribbean	Caribbean	Cayman Islands	40.4	155.8	100	3	NA	NA	NA	NA
+Latin America and the Caribbean	Caribbean	Cuba	11300.4	101.9	75.8	0.3	11.6	7.2	1.6	9.6
+Latin America and the Caribbean	Caribbean	Dominica	78.6	104.7	72	0.3	NA	NA	NA	NA
+Latin America and the Caribbean	Caribbean	Dominican Republic	8744.9	179.4	67.2	1.5	23.3	7	2.7	53.3
+Latin America and the Caribbean	Caribbean	Grenada	80.3	233.5	39.5	-0.3	NA	NA	NA	NA
+Latin America and the Caribbean	Caribbean	Guadeloupe	439.6	257.8	99.7	0.8	16.1	6.2	2.1	9.7
+Latin America and the Caribbean	Caribbean	Haiti	8326.3	300	37.6	1.3	30.3	14.6	4	111.5
+Latin America and the Caribbean	Caribbean	Jamaica	2650.9	241.2	57.6	0.9	20.5	5.7	2.4	24.7
+Latin America and the Caribbean	Caribbean	Martinique	392.6	356.2	95.7	0.6	13.7	6.9	1.9	8.5
+Latin America and the Caribbean	Caribbean	Montserrat	3.5	34.4	13.4	0.3	NA	NA	NA	NA
+Latin America and the Caribbean	Caribbean	Netherlands Antilles	220.8	276	69.7	0.8	15	6.2	2.1	14.2
+Latin America and the Caribbean	Caribbean	Puerto Rico	3879	436	76.3	0.5	14.3	8.3	1.9	12.2
+Latin America and the Caribbean	Caribbean	Saint Kitts and Nevis	41.8	160	34.6	-0.3	NA	NA	NA	NA
+Latin America and the Caribbean	Caribbean	Saint Lucia	149.2	239.9	38.5	0.8	20.4	5.9	2.3	19.3
+Latin America and the Caribbean	Caribbean	Saint Vincent and the Grenadines	119.8	308.9	58.3	0.6	20	5.8	2.2	18
+Latin America and the Caribbean	Caribbean	Trinidad and Tobago	1302.7	253.9	75.3	0.3	13.7	7.3	1.6	18.6
+Latin America and the Caribbean	Caribbean	Turks and Caicos Islands	20.6	47.9	46.4	3.5	NA	NA	NA	NA
+Latin America and the Caribbean	Caribbean	United States Virgin Islands	111.5	321.2	47.2	0.9	14.4	5.7	2.1	11.2
+Latin America and the Caribbean	Central America	Belize	255.9	11.1	48.3	2.1	27	5.3	3.2	42.2
+Latin America and the Caribbean	Central America	Costa Rica	4172.9	81.7	60.6	1.9	19.1	3.9	2.3	12.2
+Latin America and the Caribbean	Central America	El Salvador	6515.4	309.7	63.7	1.6	25.1	5.9	2.9	34.7
+Latin America and the Caribbean	Central America	Guatemala	12346.9	113.4	40.6	2.6	34.2	6.7	4.4	54.3
+Latin America and the Caribbean	Central America	Honduras	6940.6	61.9	55.6	2.3	30	5.7	3.7	48
+Latin America and the Caribbean	Central America	Mexico	103457	52.8	75	1.5	22.4	5	2.5	34.4
+Latin America and the Caribbean	Central America	Nicaragua	5465.9	42	57.3	2.4	31.6	5.1	3.7	45.2
+Latin America and the Caribbean	Central America	Panama	3120.4	41.3	57.2	1.8	22.7	5	2.7	26.9
+Latin America and the Caribbean	South America	Argentina	38427.8	13.9	88.6	1.2	19	7.6	2.4	23.2
+Latin America and the Caribbean	South America	Bolivia	8808.4	8	64	1.9	29.3	8.1	3.8	72.2
+Latin America and the Caribbean	South America	Brazil	178470.4	21	82.9	1.2	19.7	7.1	2.2	45.5
+Latin America and the Caribbean	South America	Chile	15805.5	20.9	86.6	1.2	18.2	5.6	2.4	13.7
+Latin America and the Caribbean	South America	Colombia	44222.3	38.8	76.5	1.6	22.2	5.4	2.6	32.8
+Latin America and the Caribbean	South America	Ecuador	13002.5	45.9	64.3	1.5	23	5.8	2.8	54.6
+Latin America and the Caribbean	South America	Falkland Islands (Malvinas)	3.1	0.3	82.2	0.5	NA	NA	NA	NA
+Latin America and the Caribbean	South America	French Guiana	177.9	2	75.4	2.5	24.5	3.7	3.3	16.2
+Latin America and the Caribbean	South America	Guyana	765.5	3.6	37.5	0.2	21.9	9	2.3	70.3
+Latin America and the Caribbean	South America	Paraguay	5878.1	14.5	58	2.4	29.6	5.1	3.8	45.2
+Latin America and the Caribbean	South America	Peru	27167.2	21.1	73.9	1.5	23.3	6.1	2.9	52.2
+Latin America and the Caribbean	South America	Suriname	435.5	2.7	76	0.8	21.7	5.9	2.5	29.1
+Latin America and the Caribbean	South America	Uruguay	3415.3	19.3	92.6	0.7	16.8	9.1	2.3	15.3
+Latin America and the Caribbean	South America	Venezuela	25698.8	28.2	87.7	1.9	22.8	4.6	2.7	22.3
+Northern America	Northern America	Bermuda	81.6	1539.5	100	0.7	NA	NA	NA	NA
+Northern America	Northern America	Canada	31510.3	3.2	79.3	0.8	10.3	7.5	1.5	6.4
+Northern America	Northern America	Greenland	56.6	0	82.7	0.3	NA	NA	NA	NA
+Northern America	Northern America	Saint-Pierre-et-Miquelon	6.3	26.2	92.4	0.1	NA	NA	NA	NA
+Northern America	Northern America	United States of America	294043.1	31.4	77.9	1	14.5	8.3	2.1	8.4
+Oceania	Australia/New Zealand	Australia	19730.7	2.6	92	1	12.3	7.4	1.7	6.7
+Oceania	Australia/New Zealand	New Zealand	3875.4	14.3	86.1	0.8	14	7.6	2	7.3
+Oceania	Melanesia	Fiji	838.8	45.9	51.7	1	23.6	5.5	2.9	22
+Oceania	Melanesia	New Caledonia	228.4	12.3	80.2	1.9	19.4	4.9	2.5	9.5
+Oceania	Melanesia	Papua New Guinea	5711.3	12.3	18.1	2.2	31.6	9.4	4.1	84.5
+Oceania	Melanesia	Solomon Islands	477	16.5	21.4	2.9	33.3	4.6	4.4	30.4
+Oceania	Melanesia	Vanuatu	212	17.4	22.8	2.4	30.5	5.4	4.1	34.9
+Oceania	Micronesia	Guam	162.8	300.9	40.2	1.5	20.4	4.9	2.9	11.3
+Oceania	Micronesia	Kiribati	87.7	120.8	39.5	1.4	NA	NA	NA	NA
+Oceania	Micronesia	Marshall Islands	53	292.6	66.3	1.2	NA	NA	NA	NA
+Oceania	Micronesia	Fed. States of Micronesia	109.3	155.8	29.3	0.8	28	5.9	3.8	41.9
+Oceania	Micronesia	Nauru	13.1	622	100	2.3	NA	NA	NA	NA
+Oceania	Micronesia	Northern Mariana Islands	79.4	171.1	53	4	NA	NA	NA	NA
+Oceania	Micronesia	Palau	20.5	44.7	69.3	2.1	NA	NA	NA	NA
+Oceania	Polynesia	American Samoa	61.8	310.6	54.2	2.4	NA	NA	NA	NA
+Oceania	Polynesia	Cook Islands	18.4	77.8	59.4	0.2	NA	NA	NA	NA
+Oceania	Polynesia	French Polynesia	244.4	61.1	52.6	1.5	20	4.8	2.4	11.4
+Oceania	Polynesia	Niue	1.9	7.5	33.7	-1.2	NA	NA	NA	NA
+Oceania	Polynesia	Pitcairn	0.1	13.2	0	0	NA	NA	NA	NA
+Oceania	Polynesia	Samoa	178	62.9	22.7	1	28.8	5.5	4.1	31.5
+Oceania	Polynesia	Tokelau	1.5	127.2	0	-0.1	NA	NA	NA	NA
+Oceania	Polynesia	Tonga	103.6	138.7	33.4	1	26.5	7.2	3.7	41.9
+Oceania	Polynesia	Tuvalu	10.6	407.5	55.1	1.2	NA	NA	NA	NA
+Oceania	Polynesia	Wallis and Futuna Islands 	14.7	73.6	0	0.6	NA	NA	NA	NA
